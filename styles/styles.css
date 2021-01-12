@@ -1,0 +1,39 @@
+body {
+  background-color: slategray;
+}
+
+#intro {
+	position: fixed;
+	background-color: beige;
+	text-align: center;
+	left: 10%;
+	right: 10%;
+	top: 10%;
+
+}
+
+.title {
+	padding-top: 3%;
+	font-size: 150%;
+}
+.sub-title {
+	line-height: 25%;
+	font-size: 250%;
+}
+
+.description {
+	font-size: 125%;
+}
+
+#question {
+	font-weight: bold;
+	padding-top: 4%;
+}
+
+#intro h3 {
+	padding-bottom: 4%;
+}
+
+#intro h2 {
+	padding-top: 4%;
+}
