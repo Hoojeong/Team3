@@ -1,0 +1,104 @@
+body {
+  background-color: slategray;
+}
+
+#intro {
+	position: fixed;
+	background-color: beige;
+	text-align: center;
+	left: 10%;
+	right: 10%;
+	top: 10%;
+
+}
+
+.title {
+	padding-top: 3%;
+	font-size: 150%;
+}
+.sub-title {
+	line-height: 25%;
+	font-size: 250%;
+}
+
+.description {
+	font-size: 125%;
+}
+
+#question {
+	font-weight: bold;
+	padding-top: 4%;
+}
+
+#intro h3 {
+	padding-bottom: 4%;
+}
+
+#intro h2 {
+	padding-top: 4%;
+}
+
+.navigation {
+	position: absolute;
+	background-color: navy;
+	text-align: center;
+	left: 10%;
+	right: 10%;
+}
+
+.navigation a {
+	color: beige;
+}
+
+#immigration {
+	position: absolute;
+	background-color: beige;
+	text-align: center;
+	left: 10%;
+	right: 10%;
+	top: 10%;
+}
+
+#immigration h1 {
+	font-size: 250%;
+	text-decoration: underline;
+	color: black;
+	text-align: center;
+}
+#immigration {
+	background-color: beige;
+	padding-top: 1%;
+	padding-right: content;
+	padding-left: content;
+}
+ 
+ #key {
+ 	font-style: italic;
+ 	text-align: center;
+
+ }
+ #immigration h2 {
+ 	padding: 3%;
+ 	text-align: center;
+ }
+
+ #immigration img {
+ 	display: block;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	width: 80%;
+ }
+
+ #about-us {
+	position: absolute;
+	background-color: beige;
+	text-align: center;
+	left: 10%;
+	right: 10%;
+	top: 10%;
+}
+
+#about-us p {
+	text-align: left;
+	margin: 3%;
+}
