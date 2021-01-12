@@ -88,3 +88,17 @@ body {
  	margin-right: auto;
  	width: 80%;
  }
+
+ #about-us {
+	position: absolute;
+	background-color: beige;
+	text-align: center;
+	left: 10%;
+	right: 10%;
+	top: 10%;
+}
+
+#about-us p {
+	text-align: left;
+	margin: 3%;
+}
