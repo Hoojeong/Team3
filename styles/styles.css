@@ -132,7 +132,7 @@ body {
 .chart {
 	display: inline-grid;
 	margin: 1%;
-	width: 800px;
+	width: 500px;
 	height: auto;
 	border-style: groove;
 }
