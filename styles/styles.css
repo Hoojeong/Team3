@@ -1,13 +1,7 @@
 body {
   background-color: slategrey;
-}
-
-#intro {
-	background-color: white;
-	text-align: center;
-	font-size: 100%;
-	margin-left: 10%;
-	margin-right: 10%;
+  margin: 0;
+  padding: 0;
 }
 
 .shell {
@@ -17,6 +11,16 @@ body {
 	width: 100%;
 	top: 10%;
 }
+
+#intro {
+	background-color: white;
+	text-align: center;
+	font-size: 100%;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+
 .title {
 	padding-top: 3%;
 	font-size: 200%;
@@ -150,8 +154,8 @@ body {
 	background-color: white;
 	text-align: center;
 	font-size: 150%;
-	margin-left: 10%;
-	margin-right: 10%;
+	margin-left: 20%;
+	margin-right: 20%;
 }
 
 #about-data h1 {
