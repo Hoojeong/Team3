@@ -1,5 +1,7 @@
 body {
   background-color: slategrey;
+  margin: 0;
+  padding: 0;
 }
 
 .shell {
@@ -25,6 +27,7 @@ body {
 }
 .sub-title {
 	font-size: 300%;
+	padding-top: 5%;
 }
 
 .description {
