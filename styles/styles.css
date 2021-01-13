@@ -5,7 +5,7 @@ body {
 #intro {
 	background-color: white;
 	text-align: center;
-	font-size: 500%;
+	font-size: 100%;
 	margin-left: 10%;
 	margin-right: 10%;
 }
@@ -19,12 +19,12 @@ body {
 }
 .title {
 	padding-top: 3%;
-	font-size: 150%;
+	font-size: 200%;
 	text-decoration: underline;
 }
 .sub-title {
 	line-height: 25%;
-	font-size: 250%;
+	font-size: 300%;
 }
 
 .description {
@@ -48,7 +48,7 @@ body {
 	position: absolute;
 	background-color: slategrey;
 	text-align: center;
-	font-size:500%;
+	font-size:150%;
 	width:100%;
 	top:2%;
 }
@@ -60,21 +60,19 @@ body {
 #immigration {
 	background-color: white;
 	text-align: center;
-	font-size: 500%;
+	font-size: 150%;
+	padding-top: 1%;
+	position: absolute;
 }
 
 #immigration h1 {
-	font-size: 250%;
+	font-size: 150%;
 	text-decoration: underline;
 	color: black;
 	text-align: center;
 }
-#immigration {
-	background-color: white;
-	padding-top: 1%;
-}
  
- #key {
+#key {
  	font-style: italic;
  	text-align: center;
 
@@ -82,6 +80,7 @@ body {
  #immigration h2 {
  	padding: 3%;
  	text-align: center;
+ 	font-size: 90%;
  }
 
  #immigration img {
@@ -91,19 +90,10 @@ body {
  	width: 100%;
  }
 
-#immigration {
-	position: absolute;
-	background-color: white;
-	text-align: center;
-}
-
 #ethics {
-	position: absolute;
-	background-color: beige;
+	background-color: white;
+	padding-top: 1%;
 	text-align: center;
-	left: 10%;
-	right: 10%;
-	top: 10%;
 }
 
 #ethics h1 {
@@ -112,38 +102,11 @@ body {
 	color: black;
 	text-align: center;
 }
-#ethics {
-	background-color: beige;
-	padding-top: 1%;
-	padding-right: content;
-	padding-left: content;
-}
- 
- #ethics h2 {
- 	padding: 3%;
- 	text-align: center;
- }
-
- #ethics img {
- 	display: block;
- 	margin-left: auto;
- 	margin-right: auto;
- 	width: 80%;
- }
-
-#ethics {
-	position: absolute;
-	background-color: beige;
-	text-align: center;
-	left: 10%;
-	right: 10%;
-	top: 10%;
-}
 
  #about-us {
 	background-color: white;
 	text-align: center;
-	font-size: 500%;
+	font-size: 100%;
 	margin-left: 10%;
 	margin-right: 10%;
 }
@@ -153,7 +116,6 @@ body {
 }
 #about-us p {
 	text-align: left;
-	margin: 3%;
 }
 
 #answers {
@@ -166,8 +128,48 @@ body {
 .chart {
 	display: inline-grid;
 	margin: 1%;
-	width: 2200px;
+	width: 400px;
 	height: auto;
 	border-style: groove;
 }
 
+.chart-ethics img {
+	display: inline-grid;
+	margin: 1%;
+	width: 80%;
+	height: auto;
+	border-style: groove;
+}
+
+.chart-ethics h2 {
+	font-size: 200%;
+ 	text-align: center;
+}
+
+#about-data {
+	background-color: white;
+	text-align: center;
+	font-size: 150%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+#about-data h1 {
+	font-size: 150%;
+	text-decoration: underline;
+	color: black;
+	text-align: center;
+	text-decoration: underline;
+}
+ 
+ #about-data h2 {
+ 	text-align: center;
+ 	font-size: 120%;
+ 	margin-top: 5%;
+ }
+
+ #about-data ul {
+ 	display: inline-table;
+ 	text-align: left;
+ 	margin-top: 0;
+ }
