@@ -27,8 +27,8 @@ body {
 	text-decoration: underline;
 }
 .sub-title {
-	line-height: 25%;
 	font-size: 300%;
+	padding-top: 5%;
 }
 
 .description {
