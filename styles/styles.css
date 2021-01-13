@@ -20,7 +20,6 @@ body {
 	margin-right: 20%;
 }
 
-
 .title {
 	padding-top: 3%;
 	font-size: 200%;
@@ -111,8 +110,8 @@ body {
 	background-color: white;
 	text-align: center;
 	font-size: 100%;
-	margin-left: 10%;
-	margin-right: 10%;
+	margin-left: 20%;
+	margin-right: 20%;
 }
 
 #about-us h1 {
@@ -120,6 +119,7 @@ body {
 }
 #about-us p {
 	text-align: left;
+	font-size: 120%;
 }
 
 #answers {
@@ -132,7 +132,7 @@ body {
 .chart {
 	display: inline-grid;
 	margin: 1%;
-	width: 400px;
+	width: 800px;
 	height: auto;
 	border-style: groove;
 }
@@ -172,8 +172,13 @@ body {
  	margin-top: 5%;
  }
 
+ #facts {
+ 	padding-top: 5%;
+ }
+
  #about-data ul {
  	display: inline-table;
  	text-align: left;
  	margin-top: 0;
  }
+
