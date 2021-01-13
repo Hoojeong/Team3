@@ -37,7 +37,7 @@ body {
 }
 
 #intro h3 {
-	padding-bottom: 4%;
+	padding-bottom: 1%;
 }
 
 #intro h2 {
@@ -92,6 +92,58 @@ body {
  	margin-right: auto;
  	width: 100%;
  }
+
+#immigration {
+	position: absolute;
+	background-color: beige;
+	text-align: center;
+	left: 10%;
+	right: 10%;
+	top: 10%;
+}
+
+#ethics {
+	position: absolute;
+	background-color: beige;
+	text-align: center;
+	left: 10%;
+	right: 10%;
+	top: 10%;
+}
+
+#ethics h1 {
+	font-size: 250%;
+	text-decoration: underline;
+	color: black;
+	text-align: center;
+}
+#ethics {
+	background-color: beige;
+	padding-top: 1%;
+	padding-right: content;
+	padding-left: content;
+}
+ 
+ #ethics h2 {
+ 	padding: 3%;
+ 	text-align: center;
+ }
+
+ #ethics img {
+ 	display: block;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	width: 80%;
+ }
+
+#ethics {
+	position: absolute;
+	background-color: beige;
+	text-align: center;
+	left: 10%;
+	right: 10%;
+	top: 10%;
+}
 
  #about-us {
 	background-color: white;
