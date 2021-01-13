@@ -1,20 +1,26 @@
 body {
-  background-color: slategray;
+  background-color: slategrey;
 }
 
 #intro {
-	position: fixed;
-	background-color: beige;
+	background-color: white;
 	text-align: center;
-	left: 10%;
-	right: 10%;
-	top: 10%;
-
+	font-size: 500%;
+	margin-left: 10%;
+	margin-right: 10%;
 }
 
+.shell {
+	position: absolute;
+	background-color: white;
+	text-align: center;
+	width: 100%;
+	top: 10%;
+}
 .title {
 	padding-top: 3%;
 	font-size: 150%;
+	text-decoration: underline;
 }
 .sub-title {
 	line-height: 25%;
@@ -40,10 +46,11 @@ body {
 
 .navigation {
 	position: absolute;
-	background-color: navy;
+	background-color: slategrey;
 	text-align: center;
-	left: 10%;
-	right: 10%;
+	font-size:500%;
+	width:100%;
+	top:2%;
 }
 
 .navigation a {
@@ -51,12 +58,11 @@ body {
 }
 
 #immigration {
-	position: absolute;
-	background-color: beige;
+	background-color: white;
 	text-align: center;
-	left: 10%;
-	right: 10%;
-	top: 10%;
+	font-size: 500%;
+	margin-left: 10%;
+	margin-right: 10%;
 }
 
 #immigration h1 {
@@ -66,10 +72,8 @@ body {
 	text-align: center;
 }
 #immigration {
-	background-color: beige;
+	background-color: white;
 	padding-top: 1%;
-	padding-right: content;
-	padding-left: content;
 }
  
  #key {
@@ -86,7 +90,7 @@ body {
  	display: block;
  	margin-left: auto;
  	margin-right: auto;
- 	width: 80%;
+ 	width: 100%;
  }
 
 #immigration {
@@ -142,15 +146,33 @@ body {
 }
 
  #about-us {
-	position: absolute;
-	background-color: beige;
+	background-color: white;
 	text-align: center;
-	left: 10%;
-	right: 10%;
-	top: 10%;
+	font-size: 500%;
+	margin-left: 10%;
+	margin-right: 10%;
 }
 
+#about-us h1 {
+	text-decoration: underline;
+}
 #about-us p {
 	text-align: left;
 	margin: 3%;
 }
+
+#answers {
+	display: block;
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: none;
+}
+.chart {
+	display: inline-grid;
+	margin: 1%;
+	width: 2200px;
+	height: auto;
+	border-style: groove;
+}
+
