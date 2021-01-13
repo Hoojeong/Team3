@@ -1,4 +1,10 @@
+html{line-height: 1.3;
+
+}
+
 body {
+  height: 100%;
+  width: 100%;
   background-color: slategrey;
   margin: 0;
   padding: 0;
@@ -48,6 +54,7 @@ body {
 }
 
 .navigation {
+	height: 100px;
 	position: absolute;
 	background-color: slategrey;
 	text-align: center;
@@ -172,12 +179,15 @@ body {
  	margin-top: 5%;
  }
 
+ #about-data p {
+ 	text-align: left;
+ }
  #facts {
  	padding-top: 5%;
  }
 
  #about-data ul {
- 	display: inline-table;
+    display: inline-table;
  	text-align: left;
  	margin-top: 0;
  }
