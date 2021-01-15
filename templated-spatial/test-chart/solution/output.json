@@ -1,0 +1,52 @@
+[
+    {
+        "Republican": 405.86000000000007, 
+        "Democrat": -2921.05, 
+        "label": "TRANSPORTATION OF THINGS"
+    }, 
+    {
+        "Republican": 0.0, 
+        "Democrat": 0, 
+        "label": "BENEFITS TO FORMER PERSONNEL"
+    }, 
+    {
+        "Republican": 1137952.8900000008, 
+        "Democrat": 633121.659999999, 
+        "label": "FRANKED MAIL"
+    }, 
+    {
+        "Republican": 51355277.45999985, 
+        "Democrat": 44437540.33999998, 
+        "label": "PERSONNEL COMPENSATION"
+    }, 
+    {
+        "Republican": 2801909.2300000135, 
+        "Democrat": 1895067.12, 
+        "label": "TRAVEL"
+    }, 
+    {
+        "Republican": 3050304.900000031, 
+        "Democrat": 2938481.640000018, 
+        "label": "SUPPLIES AND MATERIALS"
+    }, 
+    {
+        "Republican": 3098045.8800000004, 
+        "Democrat": 2184633.9799999963, 
+        "label": "OTHER SERVICES"
+    }, 
+    {
+        "Republican": 1285810.529999999, 
+        "Democrat": 869545.5599999976, 
+        "label": "EQUIPMENT"
+    }, 
+    {
+        "Republican": 5201874.919999994, 
+        "Democrat": 5213665.489999989, 
+        "label": "RENT  COMMUNICATION  UTILITIES"
+    }, 
+    {
+        "Republican": 1519341.6899999848, 
+        "Democrat": 962784.5399999979, 
+        "label": "PRINTING AND REPRODUCTION"
+    }
+]
