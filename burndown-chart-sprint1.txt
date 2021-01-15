@@ -1,0 +1,14 @@
+Sprint 1
+
+**note**
+We did not keep track of our burndown chart given our team's circumstances and we where not able to check-in as a whole team daily.  However, the below is our final tally of story points:
+
+make site easy to read and explore: 30pts
+include topic on US/CH views on organizations and institutions: 16pts
+include topic on ethical norms: 32pts
+explain data: 8pts
+include topic on immigration: 16pts
+add 'about us' page: 16pts
+provide links to further info on the data" 2pts
+
+Total: 120pts
