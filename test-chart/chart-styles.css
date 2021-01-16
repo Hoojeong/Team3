@@ -1,9 +1,22 @@
     body {
+        text-align: center;
+        background-color: slategrey;
+        color: beige;
+    }
+
+/*change chart background, size and position here*/
+    .shell {
+        margin-left: 12.5%;
+        margin-right: 12.5%;
+    }
+
+    .chart {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         width: 1200px;
-        height: 1500px;
+        height: 600px;
         position: relative;
-        text-align: center
+        background-color: beige;
+
     }
 
     svg {
@@ -22,19 +35,19 @@
         border-radius: 8px 8px 8px 8px;
         box-shadow: -3px 3px 15px #888888;
         color: black;
-        font: 12px sans-serif;
+        font: 100% sans-serif;
         padding: 5px;
         text-align: center;
     }
     .legend {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-size: 60%;
+        font-size: 100%;
     }
     text {
-        font: 10px sans-serif;
+        font: 100% sans-serif;
     }
     .axis text {
-        font: 10px sans-serif;
+        font: 100% sans-serif;
     }
     .axis path{
         fill: none;

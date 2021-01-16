@@ -1,3 +1,5 @@
+function drawchart(cssSelector){
+
     function verticalWrap(text, width) {
         text.each(function() {
             var text = d3.select(this),
@@ -26,9 +28,10 @@
     d3.json("dummy.json", function(error, dataset) {
         if (error) throw error;
 
-        var margin = {top: (parseInt(d3.select('body').style('height'), 10)/20), right: (parseInt(d3.select('body').style('width'), 10)/20), bottom: (parseInt(d3.select('body').style('height'), 10)/20), left: (parseInt(d3.select('body').style('width'), 10)/10)},
-                width = parseInt(d3.select('body').style('width'), 10) - margin.left - margin.right,
-                height = parseInt(d3.select('body').style('height'), 10) - margin.top - margin.bottom;
+//changes the position of the internal elements of the chart.
+        var margin = {top: (parseInt(d3.select(cssSelector).style('height'), 10)/20), right: (parseInt(d3.select(cssSelector).style('width'), 10)/5), bottom: (parseInt(d3.select(cssSelector).style('height'), 10)/20), left: (parseInt(d3.select(cssSelector).style('width'), 10)/10)},
+                width = parseInt(d3.select(cssSelector).style('width'), 10) - margin.left - margin.right,
+                height = parseInt(d3.select(cssSelector).style('height'), 10) - margin.top - margin.bottom;
 
         var y0 = d3.scale.ordinal()
                 .rangeRoundBands([height, 0], .2, 0.5);
@@ -40,7 +43,9 @@
 
         var colorRange = d3.scale.category20();
         var color = d3.scale.ordinal()
-                .range(colorRange.range());
+
+//Choose the colors we want here. This site can help 
+                .range(["#5ac18e", "#ff6666", "#ffdab9", "#c0d6e4"]);
 
         var xAxis = d3.svg.axis()
                 .scale(x)
@@ -52,10 +57,10 @@
                 .orient("left");
         //.tickFormat(d3.format(".2s"));
 
-        var divTooltip = d3.select("body").append("div").attr("class", "toolTip");
+        var divTooltip = d3.select(cssSelector).append("div").attr("class", "toolTip");
 
 
-        var svg = d3.select("body").append("svg")
+        var svg = d3.select(cssSelector).append("svg")
                 .attr("width", width + margin.left + margin.right)
                 .attr("height", height + margin.top + margin.bottom)
                 .append("g")
@@ -141,16 +146,20 @@
                 .attr("class", "legend")
                 .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
 
+//legend box properties
         legend.append("rect")
-                .attr("x", width - 18)
+                .attr("x", width + 180)
                 .attr("width", 18)
                 .attr("height", 18)
                 .style("fill", color);
 
+//legend text properties
         legend.append("text")
-                .attr("x", width - 24)
+                .attr("x", width + 176)
                 .attr("y", 9)
                 .attr("dy", ".35em")
                 .style("text-anchor", "end")
                 .text(function(d) { return d; });
     });
+}
+drawchart('#jobs-chart')
