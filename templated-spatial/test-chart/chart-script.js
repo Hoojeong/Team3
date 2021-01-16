@@ -165,5 +165,10 @@ function drawchart(cssSelector,datafile){
                 .text("IMMIGRATION FILLS IMPORTANT JOBS");
     });
 }
-drawchart("#jobs-chart","test-chart/dummy2.json")
-drawchart("#jobs-chart-2","test-chart/dummy.json")
+drawchart("#jobs-chart","test-chart/Q1.json")
+drawchart("#jobs-chart-2","test-chart/Q2.json")
+drawchart("#jobs-chart-3","test-chart/Q3.json")
+drawchart("#jobs-chart-4","test-chart/Q4.json")
+drawchart("#jobs-chart-5","test-chart/Q5.json")
+drawchart("#jobs-chart-6","test-chart/Q6.json")
+drawchart("#jobs-chart-7","test-chart/Q7.json")
