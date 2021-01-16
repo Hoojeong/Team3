@@ -28,7 +28,7 @@ function drawchart(cssSelector){
     d3.json("test-chart/dummy.json", function(error, dataset) {
         if (error) throw error;
 
-        var margin = {top: (parseInt(d3.select(cssSelector).style('height'), 10)/5), right: (parseInt(d3.select(cssSelector).style('width'), 8)/2.5), bottom: (parseInt(d3.select(cssSelector).style('height'), 10)/20), left: (parseInt(d3.select(cssSelector).style('width'), 9)/4)},
+        var margin = {top: (parseInt(d3.select(cssSelector).style('height'), 10)/5), right: (parseInt(d3.select(cssSelector).style('width'), 9)/3.3), bottom: (parseInt(d3.select(cssSelector).style('height'), 10)/20), left: (parseInt(d3.select(cssSelector).style('width'), 10)/8)},
                 width = parseInt(d3.select(cssSelector).style('width'), 10) - margin.left - margin.right,
                 height = parseInt(d3.select(cssSelector).style('height'), 10) - margin.top - margin.bottom;
 
@@ -158,7 +158,7 @@ function drawchart(cssSelector){
                 .text(function(d) { return d; });
 
         svg.append("text")
-                .attr("x", (width / 1.9))             
+                .attr("x", (width / 2))             
                 .attr("y", 0 - (margin.top / 2))
                 .attr("text-anchor", "middle")   
                 .style("font-size", "20px") 

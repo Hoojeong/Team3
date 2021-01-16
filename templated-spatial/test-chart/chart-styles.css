@@ -1,7 +1,7 @@
 #jobs-chart {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 /*        width: 800px;*/
-        height: 280px;
+        height: 400px;
         position: relative;
     }
 
@@ -9,6 +9,7 @@
         width: 50%;
         height: 100%;
         position: center;
+        margin-left: 12%;
     }
     .toolTip {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
