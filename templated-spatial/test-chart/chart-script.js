@@ -158,7 +158,7 @@ function drawchart(cssSelector){
                 .text(function(d) { return d; });
 
         svg.append("text")
-                .attr("x", (width / 1.9))             
+                .attr("x", (width / 2))             
                 .attr("y", 0 - (margin.top / 2))
                 .attr("text-anchor", "middle")   
                 .style("font-size", "40px") 
