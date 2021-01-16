@@ -26,6 +26,31 @@
 				</nav>
 			</header>
 
+      <!-- addting buttons -->
+      <p class = "font-weight-bold">
+          Click button to see the charts for each questions:
+          </p>
+        <div class="btn-group">
+        <div class="btn-group">
+          <button type="button" class="btn btn-info" onclick="update('#bar1')" >Job chart</button>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-info" onclick="update('#bar2')" >chart 2</button>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-info" onclick="update('#bar3')" >chart 3</button>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-info" onclick="update('#bar4')" >chart 4</button>
+        </div>
+      </div>
+
+      <!-- create four charts using four dataset so it works with the button -->
+      <svg class="charts" id="job-chart" width="1000" height="1000"></svg>
+      <svg class="charts" id="chart2" width="1000" height="1000"></svg>
+      <svg class="charts" id="chart3" width="1000" height="1000"></svg>
+      <svg class="charts" id="chart4" width="1000" height="1000"></svg>
+
 		<!-- Main -->
 			<section id="two" class="wrapper style2 special">
 					<div class = "charts">

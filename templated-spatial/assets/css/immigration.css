@@ -3265,3 +3265,13 @@
 					padding: 0;
 				}
 
+/*Buttons*/
+.btn-group {
+  margin-top: 1px;
+  margin-left:18px;
+}
+
+.font-weight-bold {
+  margin-left: 35px;
+
+}
