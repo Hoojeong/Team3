@@ -28,7 +28,7 @@ function drawchart(cssSelector){
     d3.json("test-chart/dummy.json", function(error, dataset) {
         if (error) throw error;
 
-        var margin = {top: (parseInt(d3.select(cssSelector).style('height'), 10)/5), right: (parseInt(d3.select(cssSelector).style('width'), 13)/10), bottom: (parseInt(d3.select(cssSelector).style('height'), 10)/20), left: (parseInt(d3.select(cssSelector).style('width'), 11)/10)},
+        var margin = {top: (parseInt(d3.select(cssSelector).style('height'), 10)/5), right: (parseInt(d3.select(cssSelector).style('width'), 13)/8), bottom: (parseInt(d3.select(cssSelector).style('height'), 10)/20), left: (parseInt(d3.select(cssSelector).style('width'), 11)/10)},
                 width = parseInt(d3.select(cssSelector).style('width'), 10) - margin.left - margin.right,
                 height = parseInt(d3.select(cssSelector).style('height'), 10) - margin.top - margin.bottom;
 
@@ -145,13 +145,13 @@ function drawchart(cssSelector){
                 .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
 
         legend.append("rect")
-                .attr("x", width + 166)
+                .attr("x", width + 146)
                 .attr("width", 18)
                 .attr("height", 18)
                 .style("fill", color);
 
         legend.append("text")
-                .attr("x", width + 160)
+                .attr("x", width + 140)
                 .attr("y", 9)
                 .attr("dy", ".35em")
                 .style("text-anchor", "end")
@@ -161,7 +161,7 @@ function drawchart(cssSelector){
                 .attr("x", (width / 2))             
                 .attr("y", 0 - (margin.top / 2))
                 .attr("text-anchor", "middle")   
-                .style("font-size", "40px") 
+                .style("font-size", "30px") 
                 .text("IMMIGRATION FILLS IMPORTANT JOBS");
     });
 }

@@ -1,7 +1,7 @@
 #jobs-chart {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        width: 1200px;
-        height: 600px;
+        width: 800px;
+        height: 400px;
         position: relative;
     }
 
@@ -22,16 +22,16 @@
         box-shadow: -3px 3px 15px #888888;
         color: black;
         font: 12px sans-serif;
-        font-size: 120%;
+        font-size: 75%;
         padding: 5px;
         text-align: center;
     }
     .legend {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-size: 60%;
+        font-size: 10%;
     }
     text {
-        font: 16px sans-serif;
+        font: 12px sans-serif;
         font-family: "Raleway", Arial, Helvetica, sans-serif;
         font-color: #484848;
         font-weight: 700;
@@ -40,7 +40,7 @@
         text-transform: uppercase;
     }
     .axis text {
-        font: 20px sans-serif;
+        font: 16px sans-serif;
         font-weight: 700;
     }
     .axis path{
