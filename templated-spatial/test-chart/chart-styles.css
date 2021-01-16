@@ -1,15 +1,16 @@
 #jobs-chart {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 /*        width: 800px;*/
-        height: 400px;
+        height: 300px;
         position: relative;
     }
 
     svg {
-        width: 50%;
+        width: 75%;
         height: 100%;
         position: center;
-        margin-left: 12%;
+        margin-left: 15%;
+/*        margin-right: 12.5%;*/
     }
     .toolTip {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
