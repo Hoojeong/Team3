@@ -60,11 +60,13 @@ function drawchart(cssSelector){
         var divTooltip = d3.select(cssSelector).append("div").attr("class", "toolTip");
 
 
-        var svg = d3.select(cssSelector).append("svg")
-                .attr("width", width + margin.left + margin.right)
-                .attr("height", height + margin.top + margin.bottom)
-                .append("g")
-                .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+        var svg = d3
+            .select(cssSelector)
+            .append("svg")
+            .attr("viewBox", '0 0 ${width} ${height}')
+                // .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 
         var options = d3.keys(dataset[0]).filter(function(key) { return key !== "label"; });

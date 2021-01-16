@@ -10,11 +10,11 @@
         margin-right: 12.5%;
     }
 
-    .chart {
+    #jobs-chart {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         width: 1200px;
         height: 600px;
-        position: relative;
+        position: absolute;
         background-color: beige;
 
     }
