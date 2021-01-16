@@ -1,4 +1,4 @@
-function drawchart(cssSelector){
+function drawchart(cssSelector,datafile){
 
     function verticalWrap(text, width) {
         text.each(function() {
@@ -25,7 +25,7 @@ function drawchart(cssSelector){
         });
     }
 
-    d3.json("test-chart/dummy.json", function(error, dataset) {
+    d3.json(datafile, function(error, dataset) {
         if (error) throw error;
 
         var margin = {top: (parseInt(d3.select(cssSelector).style('height'), 10)/5), right: (parseInt(d3.select(cssSelector).style('width'), 9)/3.3), bottom: (parseInt(d3.select(cssSelector).style('height'), 10)/20), left: (parseInt(d3.select(cssSelector).style('width'), 10)/8)},
@@ -165,5 +165,5 @@ function drawchart(cssSelector){
                 .text("IMMIGRATION FILLS IMPORTANT JOBS");
     });
 }
-drawchart("#jobs-chart")
-
+drawchart("#jobs-chart","test-chart/dummy2.json")
+drawchart("#jobs-chart-2","test-chart/dummy.json")
