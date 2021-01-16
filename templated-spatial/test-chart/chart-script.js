@@ -1,3 +1,5 @@
+function drawchart(cssSelector){
+
     function verticalWrap(text, width) {
         text.each(function() {
             var text = d3.select(this),
@@ -26,9 +28,9 @@
     d3.json("test-chart/dummy.json", function(error, dataset) {
         if (error) throw error;
 
-        var margin = {top: (parseInt(d3.select('#test-chart').style('height'), 10)/20), right: (parseInt(d3.select('#test-chart').style('width'), 10)/20), bottom: (parseInt(d3.select('#test-chart').style('height'), 10)/20), left: (parseInt(d3.select('#test-chart').style('width'), 10)/10)},
-                width = parseInt(d3.select('#test-chart').style('width'), 10) - margin.left - margin.right,
-                height = parseInt(d3.select('#test-chart').style('height'), 10) - margin.top - margin.bottom;
+        var margin = {top: (parseInt(d3.select(cssSelector).style('height'), 10)/5), right: (parseInt(d3.select(cssSelector).style('width'), 13)/8), bottom: (parseInt(d3.select(cssSelector).style('height'), 10)/20), left: (parseInt(d3.select(cssSelector).style('width'), 11)/10)},
+                width = parseInt(d3.select(cssSelector).style('width'), 10) - margin.left - margin.right,
+                height = parseInt(d3.select(cssSelector).style('height'), 10) - margin.top - margin.bottom;
 
         var y0 = d3.scale.ordinal()
                 .rangeRoundBands([height, 0], .2, 0.5);
@@ -40,7 +42,8 @@
 
         var colorRange = d3.scale.category20();
         var color = d3.scale.ordinal()
-                .range(colorRange.range());
+                // .range(colorRange.range());
+                .range(["#5ac18e", "#ff6666", "#ffdab9", "#c0d6e4"]);
 
         var xAxis = d3.svg.axis()
                 .scale(x)
@@ -52,10 +55,10 @@
                 .orient("left");
         //.tickFormat(d3.format(".2s"));
 
-        var divTooltip = d3.select("#test-chart").append("div").attr("class", "toolTip");
+        var divTooltip = d3.select("body").append("div").attr("class", "toolTip");
 
 
-        var svg = d3.select("#test-chart").append("svg")
+        var svg = d3.select(cssSelector).append("svg")
                 .attr("width", width + margin.left + margin.right)
                 .attr("height", height + margin.top + margin.bottom)
                 .append("g")
@@ -113,7 +116,7 @@
                 .style("fill", function(d) { return color(d.name); });
 
         bar_enter.append("text")
-                .attr("x", function(d) { return x(d.value) +5;  })
+                .attr("x", function(d) { return x(d.value) +10;  })
                 .attr("y", function(d) { return y1(d.name) +(y1.rangeBand()/2); })
                 .attr("dy", ".35em")
                 .text(function(d) { return d.value; });
@@ -142,15 +145,25 @@
                 .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
 
         legend.append("rect")
-                .attr("x", width - 18)
+                .attr("x", width + 266)
                 .attr("width", 18)
                 .attr("height", 18)
                 .style("fill", color);
 
         legend.append("text")
-                .attr("x", width - 24)
+                .attr("x", width + 260)
                 .attr("y", 9)
                 .attr("dy", ".35em")
                 .style("text-anchor", "end")
                 .text(function(d) { return d; });
+
+        svg.append("text")
+            .attr("x", (width / 1.9))             
+            .attr("y", 0 - (margin.top / 2))
+            .attr("text-anchor", "middle")   
+            .style("font-size", "40px") 
+            .text("IMMIGRATION FILLS IMPORTANT JOBS");
     });
+}
+drawchart("#jobs-chart")
+
