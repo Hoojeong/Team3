@@ -55,7 +55,6 @@ function drawchart(cssSelector,datafile,title){
         var yAxis = d3.svg.axis()
                 .scale(y0)
                 .orient("left");
-        //.tickFormat(d3.format(".2s"));
 
         var divTooltip = d3.select("body").append("div").attr("class", "toolTip");
 
@@ -86,17 +85,6 @@ function drawchart(cssSelector,datafile,title){
         svg.append("g")
                 .attr("class", "y axis")
                 .call(yAxis);
-        /*
-         .append("text")
-         .attr("transform", "rotate(0)")
-         .attr("x", 60)
-         .attr("dx", ".71em")
-         .style("text-anchor", "end")
-         .text("Satisfaction %");
-         */
-
-        // svg.selectAll(".y.axis .tick text")
-        //         .call(verticalWrap, y0.rangeBand());
 
         var bar = svg.selectAll(".bar")
                 .data(dataset)
@@ -181,13 +169,13 @@ function update(cssSelector) {
     }
 }
 // call function to create charts
-drawchart("#jobs-chart","test-chart/Q1.json", "IMMIGRATION FILLS USEFUL JOBS IN THE WORKFORCE")
-drawchart("#diversity-chart","test-chart/Q2.json", "IMMIGRATION STRENGTHENS DIVERSITY")
-drawchart("#crime-chart","test-chart/Q3.json", "IMMIGRATION INCREASES THE CRIME RATE")
-drawchart("#terrorism-chart","test-chart/Q4.json", "IMMIGRATION INCREASES THE RISK OF TERRORISM")
-drawchart("#poor-chart","test-chart/Q5.json", "IMMIGRATION HELPS POOR PEOPLE ESTABLISH NEW LIVES")
-drawchart("#unemployment-chart","test-chart/Q6.json", "IMMIGRATION INCREASES UNEMPLOYMENT")
-drawchart("#conflict-chart","test-chart/Q7.json", "IMMIGRATION LEADS TO SOCIAL CONFLICT")
+drawchart("#jobs-chart","data/Q1.json", "IMMIGRATION FILLS USEFUL JOBS IN THE WORKFORCE")
+drawchart("#diversity-chart","data/Q2.json", "IMMIGRATION STRENGTHENS DIVERSITY")
+drawchart("#crime-chart","data/Q3.json", "IMMIGRATION INCREASES THE CRIME RATE")
+drawchart("#terrorism-chart","data/Q4.json", "IMMIGRATION INCREASES THE RISK OF TERRORISM")
+drawchart("#poor-chart","data/Q5.json", "IMMIGRATION HELPS POOR PEOPLE ESTABLISH NEW LIVES")
+drawchart("#unemployment-chart","data/Q6.json", "IMMIGRATION INCREASES UNEMPLOYMENT")
+drawchart("#conflict-chart","data/Q7.json", "IMMIGRATION LEADS TO SOCIAL CONFLICT")
 
 //initiat chart
 update("#jobs-chart")
