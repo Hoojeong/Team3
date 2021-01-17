@@ -1686,6 +1686,7 @@
 	h2 {
 		font-size: 1.75em;
 		line-height: 1.5em;
+		text-decoration: none;
 	}
 
 	h3 {
@@ -1772,6 +1773,17 @@
 	.align-right {
 		text-align: right;
 	}
+
+/*about data page*/
+    .subtitles{
+    	text-transform: none; 
+    }
+
+    .hyperlink{
+    	text-decoration: none;
+    	color:#666;
+    	font-weight: bold;
+    }
 
 /* Box */
 
@@ -2287,6 +2299,8 @@
 			display: none;
 		}
 
+
+
 /* Image */
 
 	.image {
@@ -2323,13 +2337,21 @@
 
 		.image.fit {
 			display: block;
-			margin: 0 0 2em 0;
+			margin: 0 0 0 0;
 			width: 100%;
 		}
 
 			.image.fit img {
+                margin-bottom: 0;
 				width: 100%;
 			}
+
+		.image_container{
+			margin: 1em 0 2em 0;
+			text-align: center;
+			color: #aaa;
+
+		}
 
 		.image.rounded {
 			border-radius: 100%;
@@ -2586,6 +2608,9 @@
 
 	header.major {
 		margin: 0 0 6em 0;
+	}
+	header#data-subtititle{
+		margin: 0 0 0 0;
 	}
 
 		header.major h2 {
