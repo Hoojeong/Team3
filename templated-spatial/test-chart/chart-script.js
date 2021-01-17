@@ -43,7 +43,6 @@ function drawchart(cssSelector,datafile,title){
                 .range([0, width]);
 
 //set colors
-        var colorRange = d3.scale.category20();
         var color = d3.scale.ordinal()
                 // .range(colorRange.range());
                 .range(["#5ac18e", "#ff6666", "#ffdab9", "#c0d6e4"]);
@@ -170,11 +169,17 @@ function drawchart(cssSelector,datafile,title){
 }
 
 // function for buttons to show and hide charts
-function update(ccsSelector) {
-  $(".charts").hide();
-  $(ccsSelector).show();
-}
+function update(cssSelector) {
 
+// hide anything that matches .charts 
+  for(x of document.querySelectorAll(".charts")){
+    x.style.display='none';
+    }
+// show anything that matches cssSelector
+  for(x of document.querySelectorAll(cssSelector)){
+    x.style.display='';
+    }
+}
 // call function to create charts
 drawchart("#jobs-chart","test-chart/Q1.json", "IMMIGRATION FILLS USEFUL JOBS IN THE WORKFORCE")
 drawchart("#diversity-chart","test-chart/Q2.json", "IMMIGRATION STRENGTHENS DIVERSITY")
