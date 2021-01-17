@@ -153,6 +153,13 @@ function drawchart(cssSelector,datafile,title){
                 .attr("text-anchor", "middle")   
                 .style("font-size", "20px") 
                 .text(title);
+
+        svg.append("text")
+                .attr("x", (width / 2))             
+                .attr("y", 0 - (margin.top / 2) + 20)
+                .attr("text-anchor", "middle")   
+                .style("font-size", "20px") 
+                .text(title);
     });
 }
 
