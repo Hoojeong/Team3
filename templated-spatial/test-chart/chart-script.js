@@ -1,4 +1,4 @@
-function drawchart(cssSelector,datafile){
+function drawchart(cssSelector,datafile,title){
 
     function verticalWrap(text, width) {
         text.each(function() {
@@ -25,9 +25,11 @@ function drawchart(cssSelector,datafile){
         });
     }
 
+//get data
     d3.json(datafile, function(error, dataset) {
         if (error) throw error;
 
+//set position variables
         var margin = {top: (parseInt(d3.select(cssSelector).style('height'), 10)/5), right: (parseInt(d3.select(cssSelector).style('width'), 9)/3.3), bottom: (parseInt(d3.select(cssSelector).style('height'), 10)/20), left: (parseInt(d3.select(cssSelector).style('width'), 10)/8)},
                 width = parseInt(d3.select(cssSelector).style('width'), 10) - margin.left - margin.right,
                 height = parseInt(d3.select(cssSelector).style('height'), 10) - margin.top - margin.bottom;
@@ -40,6 +42,7 @@ function drawchart(cssSelector,datafile){
         var x = d3.scale.linear()
                 .range([0, width]);
 
+//set colors
         var colorRange = d3.scale.category20();
         var color = d3.scale.ordinal()
                 // .range(colorRange.range());
@@ -93,8 +96,8 @@ function drawchart(cssSelector,datafile){
          .text("Satisfaction %");
          */
 
-        svg.selectAll(".y.axis .tick text")
-                .call(verticalWrap, y0.rangeBand());
+        // svg.selectAll(".y.axis .tick text")
+        //         .call(verticalWrap, y0.rangeBand());
 
         var bar = svg.selectAll(".bar")
                 .data(dataset)
@@ -162,13 +165,24 @@ function drawchart(cssSelector,datafile){
                 .attr("y", 0 - (margin.top / 2))
                 .attr("text-anchor", "middle")   
                 .style("font-size", "20px") 
-                .text("IMMIGRATION FILLS IMPORTANT JOBS");
+                .text(title);
     });
 }
-drawchart("#jobs-chart","test-chart/Q1.json")
-drawchart("#jobs-chart-2","test-chart/Q2.json")
-drawchart("#jobs-chart-3","test-chart/Q3.json")
-drawchart("#jobs-chart-4","test-chart/Q4.json")
-drawchart("#jobs-chart-5","test-chart/Q5.json")
-drawchart("#jobs-chart-6","test-chart/Q6.json")
-drawchart("#jobs-chart-7","test-chart/Q7.json")
+
+// function for buttons to show and hide charts
+function update(ccsSelector) {
+  $(".charts").hide();
+  $(ccsSelector).show();
+}
+
+// call function to create charts
+drawchart("#jobs-chart","test-chart/Q1.json", "IMMIGRATION FILLS USEFUL JOBS IN THE WORKFORCE")
+drawchart("#diversity-chart","test-chart/Q2.json", "IMMIGRATION STRENGTHENS DIVERSITY")
+// drawchart("#jobs-chart-3","test-chart/Q3.json")
+// drawchart("#jobs-chart-4","test-chart/Q4.json")
+// drawchart("#jobs-chart-5","test-chart/Q5.json")
+// drawchart("#jobs-chart-6","test-chart/Q6.json")
+// drawchart("#jobs-chart-7","test-chart/Q7.json")
+
+//initiat chart
+update("#jobs-chart")
