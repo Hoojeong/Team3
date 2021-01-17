@@ -3266,9 +3266,16 @@
 				}
 
 /*Buttons*/
+#button-wrapper {
+    position: relative;
+    width: 100%
+    height: auto;
+}
+
 .btn-group {
   margin-top: 1px;
   margin-left:18px;
+  float: left;
 }
 
 .font-weight-bold {

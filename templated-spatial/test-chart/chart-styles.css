@@ -1,16 +1,15 @@
-#jobs-chart {
+.charts {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-/*        width: 800px;*/
+        width: 800px;
         height: 300px;
-        position: relative;
     }
 
-    svg {
+/*    svg {
         width: 75%;
         height: 100%;
         position: center;
         margin-left: 15%;
-/*        margin-right: 12.5%;*/
+        margin-right: 12.5%;*/
     }
     .toolTip {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -61,3 +60,16 @@
     .x.axis path {
         display: none;
     }
+
+#button-wrapper {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.btn-group {
+  margin-top: 1px;
+  margin-left:10px;
+  float: left;
+}
