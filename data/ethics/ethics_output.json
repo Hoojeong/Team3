@@ -1,0 +1,114 @@
+[
+  {
+    "id": "Q1",
+    "label": "United States",
+    "Up to 29": "6.78",
+    "30-49": "6.52",
+    "50 and more": "5.65"
+  },
+  {
+    "id": "Q1",
+    "label": "China",
+    "Up to 29": "3.19",
+    "30-49": "2.22",
+    "50 and more": "1.73"
+  },
+  {
+    "id": "Q2",
+    "label": "United States",
+    "Up to 29": "6.68",
+    "30-49": "6.67",
+    "50 and more": "6.27"
+  },
+  {
+    "id": "Q2",
+    "label": "China",
+    "Up to 29": "4.31",
+    "30-49": "3.85",
+    "50 and more": "3.03"
+  },
+  {
+    "id": "Q3",
+    "label": "United States",
+    "Up to 29": "1.66",
+    "30-49": "1.56",
+    "50 and more": "1.18"
+  },
+  {
+    "id": "Q3",
+    "label": "China",
+    "Up to 29": "1.61",
+    "30-49": "1.57",
+    "50 and more": "1.5"
+  },
+  {
+    "id": "Q4",
+    "label": "United States",
+    "Up to 29": "2.53",
+    "30-49": "2.12",
+    "50 and more": "1.71"
+  },
+  {
+    "id": "Q4",
+    "label": "China",
+    "Up to 29": "3.01",
+    "30-49": "3.28",
+    "50 and more": "3.5"
+  },
+  {
+    "id": "Q5",
+    "label": "United States",
+    "Up to 29": "1.33",
+    "30-49": "1.67",
+    "50 and more": "1.91"
+  },
+  {
+    "id": "Q5",
+    "label": "China",
+    "Up to 29": "1.38",
+    "30-49": "1.36",
+    "50 and more": "1.25"
+  },
+  {
+    "id": "Q6",
+    "label": "United States",
+    "Up to 29": "6.32",
+    "30-49": "5.84",
+    "50 and more": "4.8"
+  },
+  {
+    "id": "Q6",
+    "label": "China",
+    "Up to 29": "1.59",
+    "30-49": "1.52",
+    "50 and more": "1.39"
+  },
+  {
+    "id": "Q7",
+    "label": "United States",
+    "Up to 29": "5.04",
+    "30-49": "5.65",
+    "50 and more": "5.71"
+  },
+  {
+    "id": "Q7",
+    "label": "China",
+    "Up to 29": "4.39",
+    "30-49": "5.34",
+    "50 and more": "5.99"
+  },
+  {
+    "id": "",
+    "label": "",
+    "Up to 29": "",
+    "30-49": "",
+    "50 and more": ""
+  },
+  {
+    "id": "",
+    "label": "",
+    "Up to 29": "",
+    "30-49": "",
+    "50 and more": ""
+  }
+]
