@@ -1,27 +1,34 @@
-#!/usr/bin/env python3
+import json
+import csv
+with open("immigration_input.csv") as f:
+	reader = csv.DictReader(f)
+	opinion = list(reader)
 
-# advanced example!
+#print(opinion)
+filename="immigration_output.json"
+with open(filename, "w") as f:
+	json.dump(opinion, f, indent=2)
 
-# load input1.csv (expenditures) and input2.json (legislators)
+# step1 make a list of unique id: Q1, Q2...
+unique_ids=["Q1","Q2","Q3","Q4","Q5","Q6","Q7"]
 
-# we will merge the two datasets based on bioguide id
+# loop over the list
+for n in unique_ids: 
+	# write a new json file for each question
+	filename=n+".json"
+	opinion_for_question=[]
+	print(filename)
+	for item in opinion:
+		if item["id"] == n:
+			item_without_id=item.copy()
+			del item_without_id["id"]
+			opinion_for_question.append(item_without_id)
+			print(item_without_id) 
 
-# create a mapping (dict) of legislators where the key is bioguide id
-# and the value is the whole legislator dict
+	#with fill out opinion for question only contain that opinion with Qn
+	with open(filename, 'w') as f:
+		json.dump(opinion_for_question, f, indent=2)
 
-# loop through the expenditures and filter down to those where the bioguide id exists
-# look up the bioguide in the legislator mapping we created above
-# if the bioguide doesn't exist in the mapping, skip it
 
-# after finding the legislator, check the legislator's party in his/her last term
 
-# group by sum the AMOUNT based on CATEGORY and party: 
-#   loop through the rows and sum together the AMOUNT for each combination of CATEGORY and party
-# this is very similar to example3 except we are grouping by two columns instead of 1
-
-# output a json array to output.json using json.dump that looks like
-# {
-#     'label': ...,
-#     'Democrat': ...,
-#     'Republican': ...
-# }
+			
