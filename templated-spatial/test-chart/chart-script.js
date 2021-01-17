@@ -30,7 +30,7 @@ function drawchart(cssSelector,datafile,title){
         if (error) throw error;
 
 //set position variables
-        var margin = {top: (parseInt(d3.select(cssSelector).style('height'), 10)/5), right: (parseInt(d3.select(cssSelector).style('width'), 9)/3.3), bottom: (parseInt(d3.select(cssSelector).style('height'), 10)/20), left: (parseInt(d3.select(cssSelector).style('width'), 10)/8)},
+        var margin = {top: (parseInt(d3.select(cssSelector).style('height'), 10)/5), right: (parseInt(d3.select(cssSelector).style('width'), 9)/3.3), bottom: (parseInt(d3.select(cssSelector).style('height'), 10)/20), left: (parseInt(d3.select(cssSelector).style('width'), 11)/8)},
                 width = parseInt(d3.select(cssSelector).style('width'), 10) - margin.left - margin.right,
                 height = parseInt(d3.select(cssSelector).style('height'), 10) - margin.top - margin.bottom;
 
@@ -45,7 +45,7 @@ function drawchart(cssSelector,datafile,title){
 //set colors
         var color = d3.scale.ordinal()
                 // .range(colorRange.range());
-                .range(["#5ac18e", "#ff6666", "#ffdab9", "#c0d6e4"]);
+                .range(["rgba(60,179,113,1)", "rgba(255,165,0,1)", "rgba(180,180,180,0.4)", "#c0d6e4"]);
 
         var xAxis = d3.svg.axis()
                 .scale(x)
@@ -133,7 +133,7 @@ function drawchart(cssSelector,datafile,title){
                     l = elements.length
                     l = l-1
                     elementData = elements[l].__data__
-                    divTooltip.html((d.label)+"<br>"+elementData.name+"<br>"+elementData.value+"%");
+                    divTooltip.html((d.label)+"<br>"+elementData.name+"<br>"+elementData.value);
                 });
         bar
                 .on("mouseout", function(d){
@@ -183,11 +183,11 @@ function update(cssSelector) {
 // call function to create charts
 drawchart("#jobs-chart","test-chart/Q1.json", "IMMIGRATION FILLS USEFUL JOBS IN THE WORKFORCE")
 drawchart("#diversity-chart","test-chart/Q2.json", "IMMIGRATION STRENGTHENS DIVERSITY")
-// drawchart("#jobs-chart-3","test-chart/Q3.json")
-// drawchart("#jobs-chart-4","test-chart/Q4.json")
-// drawchart("#jobs-chart-5","test-chart/Q5.json")
-// drawchart("#jobs-chart-6","test-chart/Q6.json")
-// drawchart("#jobs-chart-7","test-chart/Q7.json")
+drawchart("#crime-chart","test-chart/Q3.json", "IMMIGRATION INCREASES THE CRIME RATE")
+drawchart("#terrorism-chart","test-chart/Q4.json", "IMMIGRATION INCREASES THE RISK OF TERRORISM")
+drawchart("#poor-chart","test-chart/Q5.json", "IMMIGRATION HELPS POOR PEOPLE ESTABLISH NEW LIVES")
+drawchart("#unemployment-chart","test-chart/Q6.json", "IMMIGRATION INCREASES UNEMPLOYMENT")
+drawchart("#conflict-chart","test-chart/Q7.json", "IMMIGRATION LEADS TO SOCIAL CONFLICT")
 
 //initiat chart
 update("#jobs-chart")
