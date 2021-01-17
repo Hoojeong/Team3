@@ -1,4 +1,4 @@
-function drawchart(cssSelector,datafile,title){
+function drawchart(cssSelector,datafile){
 
     function verticalWrap(text, width) {
         text.each(function() {
@@ -29,7 +29,7 @@ function drawchart(cssSelector,datafile,title){
     d3.json(datafile, function(error, dataset) {
         if (error) throw error;
 
-//set position variables
+        //set position variables
         var margin = {top: (parseInt(d3.select(cssSelector).style('height'), 10)/5), right: (parseInt(d3.select(cssSelector).style('width'), 9)/3.3), bottom: (parseInt(d3.select(cssSelector).style('height'), 10)/20), left: (parseInt(d3.select(cssSelector).style('width'), 11)/8)},
                 width = parseInt(d3.select(cssSelector).style('width'), 10) - margin.left - margin.right,
                 height = parseInt(d3.select(cssSelector).style('height'), 10) - margin.top - margin.bottom;
@@ -42,7 +42,7 @@ function drawchart(cssSelector,datafile,title){
         var x = d3.scale.linear()
                 .range([0, width]);
 
-//set colors
+        //set colors
         var color = d3.scale.ordinal()
                 // .range(colorRange.range());
                 .range(["rgba(60,179,113,1)", "rgba(255,165,0,1)", "rgba(180,180,180,0.4)", "#c0d6e4"]);
@@ -147,26 +147,36 @@ function drawchart(cssSelector,datafile,title){
                 .style("text-anchor", "end")
                 .text(function(d) { return d; });
 
-        svg.append("text")
-                .attr("x", (width / 2))             
-                .attr("y", 0 - (margin.top / 2))
-                .attr("text-anchor", "middle")   
-                .style("font-size", "20px") 
-                .text(title);
+        d3.json("data/subtitles.json", function(error, subtitleData) {
 
-        svg.append("text")
-                .attr("x", (width / 2))             
-                .attr("y", 0 - (margin.top / 2) + 20)
-                .attr("text-anchor", "middle")   
-                .style("font-size", "20px") 
-                .text(title);
+            var myTitle = subtitleData[datafile]['title']
+            var mySubTitle = subtitleData[datafile]['subtitle']
+
+            svg.append("text")
+                    .attr("x", (width / 2))
+                    .attr("y", 0 - (margin.top / 2))
+                    .attr("text-anchor", "middle")
+                    .attr("class", "subtitle")
+                    .style("font-size", "20px")
+                    .text(mySubTitle);
+
+            svg.append("text")
+                    .attr("x", (width / 2))
+                    .attr("y", 0 - (margin.top / 2) + 20)
+                    .attr("text-anchor", "middle")
+                    .attr("class", "title")
+                    .style("font-size", "20px")
+                    .text(myTitle);
+
+        })
+
     });
 }
 
 // function for buttons to show and hide charts
 function update(cssSelector) {
 
-// hide anything that matches .charts 
+// hide anything that matches .charts
   for(x of document.querySelectorAll(".charts")){
     x.style.display='none';
     }
@@ -176,13 +186,13 @@ function update(cssSelector) {
     }
 }
 // call function to create charts
-drawchart("#jobs-chart","data/Q1.json", "IMMIGRATION FILLS USEFUL JOBS IN THE WORKFORCE")
-drawchart("#diversity-chart","data/Q2.json", "IMMIGRATION STRENGTHENS DIVERSITY")
-drawchart("#crime-chart","data/Q3.json", "IMMIGRATION INCREASES THE CRIME RATE")
-drawchart("#terrorism-chart","data/Q4.json", "IMMIGRATION INCREASES THE RISK OF TERRORISM")
-drawchart("#poor-chart","data/Q5.json", "IMMIGRATION HELPS POOR PEOPLE ESTABLISH NEW LIVES")
-drawchart("#unemployment-chart","data/Q6.json", "IMMIGRATION INCREASES UNEMPLOYMENT")
-drawchart("#conflict-chart","data/Q7.json", "IMMIGRATION LEADS TO SOCIAL CONFLICT")
+drawchart("#jobs-chart","data/Q1.json")
+drawchart("#diversity-chart","data/Q2.json")
+drawchart("#crime-chart","data/Q3.json")
+drawchart("#terrorism-chart","data/Q4.json")
+drawchart("#poor-chart","data/Q5.json")
+drawchart("#unemployment-chart","data/Q6.json")
+drawchart("#conflict-chart","data/Q7.json")
 
 //initiat chart
 update("#jobs-chart")
