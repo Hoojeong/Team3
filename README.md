@@ -20,6 +20,7 @@ python3 -m http.server/index.html
 
 # Authors and acknowledgment
 Students: Hamish Cameron, Hoojeong Byun, Zaiyi Jiang
+
 Faculty: Dhrumil Mehta
 
 
