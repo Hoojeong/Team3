@@ -3263,5 +3263,21 @@
 					display: block;
 					margin: 0;
 					padding: 0;
-				}
+				}}
+.chart_notes{
+	color: #aaa;
+	text-align: left;
+	margin: 0 15%;
+	font-size: 0.8em;
+	line-height: 1.1em;
+
+}
+
+.chart_container{
+	padding: 0 auto;
+	margin: 0 auto;
+}
+
+
+
 
