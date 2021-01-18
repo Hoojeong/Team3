@@ -3282,6 +3282,12 @@
 	width: 1000px;
 }
 
+#data_source{
+	color: #8d93ab;
+	text-decoration: none;
+	text-align: left;
+	font-weight: bold;
+}
 
 
 
