@@ -1,0 +1,78 @@
+{
+    "data/ethics/Q177.json": {
+        "title": "Claiming inelgible government benefits can be justified",
+        "subtitle": "Chinese are more likely to disagree that"
+    },
+    "data/ethics/Q178.json": {
+        "title": "Avoiding a fare on public transport can be justified",
+        "subtitle": "Americans and Chinese are both likely to disagree that"
+    },
+    "data/ethics/Q179.json": {
+        "title": "Stealing property can be justified",
+        "subtitle": "Americans and Chinese are both likely to disagree that"
+    },
+    "data/ethics/Q180.json": {
+        "title": "Cheating on taxes if you have a chance can be justified",
+        "subtitle": "Americans and Chinese are both likely to disagree that"
+    },
+    "data/ethics/Q181.json": {
+        "title": "Someone accepting a bribery can be justified",
+        "subtitle": "The majority of Chinese and Americans disagree that"
+    },
+    "data/ethics/Q182.json": {
+        "title": "Homosexuality can be justified",
+        "subtitle": "Americans are more likely to agree that"
+    },
+    "data/ethics/Q183.json": {
+        "title": "Prostitution can be justified",
+        "subtitle": "Chinese are more likely to disagree that"
+    },
+    "data/ethics/Q184.json": {
+        "title": "Abortion can be justified",
+        "subtitle": "Chinese are more likely to disagree that"
+    },
+    "data/ethics/Q185.json": {
+        "title": "Divorce can be justified",
+        "subtitle": "Americans are more likely to agree that"
+    },
+    "data/ethics/Q186.json": {
+        "title": "Premarital sex can be justified",
+        "subtitle": "Americans are more likely to agree that"
+    },
+    "data/ethics/Q187.json": {
+        "title": "Suicide can be justified",
+        "subtitle": "Americans and Chinese are both likely to disagree that"
+    },
+    "data/ethics/Q188.json": {
+        "title": "Euthanasia can be justified",
+        "subtitle": "Americans are more likely to agree that"
+    },
+    "data/ethics/Q189.json": {
+        "title": "For a man to beat his wife can be justified",
+        "subtitle": "The majority of Chinese and Americans disagree that"
+    },
+    "data/ethics/Q190.json": {
+        "title": "Parents beating children can be justified",
+        "subtitle": "Americans are more likely to disagree that"
+    },
+    "data/ethics/Q191.json": {
+        "title": "Violence against other people can be justified",
+        "subtitle": "Americans and Chinese are both likely to disagree that"
+    },
+    "data/ethics/Q192.json": {
+        "title": "Political, ideological or religious terrorism can be justified",
+        "subtitle": "The majority of Chinese and Americans agree that"
+    },
+    "data/ethics/Q193.json": {
+        "title": "Having casual sex can be justified",
+        "subtitle": "Chinese are more likely to disagree that"
+    },
+    "data/ethics/Q194.json": {
+        "title": "Political violence can be justified",
+        "subtitle": "Americans and Chinese are both likely to disagree that"
+    },
+    "data/ethics/Q195.json": {
+        "title": "Death penalty can be justified",
+        "subtitle": "Americans and Chinese are both moderate on that"
+    }
+}
