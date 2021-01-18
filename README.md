@@ -1,4 +1,4 @@
-# World Views Compaired - Americans vs Chinese
+# World Views Compared - Americans vs Chinese
 https://hoojeong.github.io/Team3/index.html
 
 
