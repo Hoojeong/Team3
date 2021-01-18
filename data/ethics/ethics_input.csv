@@ -1,43 +1,39 @@
-id,label,Agree,Disagree
-Q177,United States,6.0 ,51.9 
-Q177,China,19.1 ,80.4 
-Q178,United States,13.4 ,84.9 
-Q178,China,2.7 ,96.2 
-Q179,United States,5.8 ,92.3 
-Q179,China,1.4 ,98.5 
-Q180,United States,6.2 ,92.0 
-Q180,China,2.2 ,97.4 
-Q181,United States,4.7 ,93.4 
-Q181,China,3.6 ,95.7 
-Q182,United States,52.2 ,45.3 
-Q182,China,10.4 ,89.4 
-Q183,United States,21.3 ,76.9 
-Q183,China,2.5 ,97.4 
-Q184,United States,36.9 ,61.3 
-Q184,China,9.5 ,89.7 
-Q185,United States,57.0 ,41.3 
-Q185,China,24.4 ,75.2 
-Q186,United States,58.5 ,39.6 
-Q186,China,25.1 ,74.4 
-Q187,United States,18.0 ,80.0 
-Q187,China,6.0 ,93.6 
-Q188,United States,44.0 ,53.9 
-Q188,China,30.5 ,69.0 
-Q189,United States,3.0 ,95.3 
-Q189,China,3.1 ,96.5 
-Q190,United States,7.6 ,90.6 
-Q190,China,19.5 ,80.3 
-Q191,United States,7.8 ,90.4 
-Q191,China,2.9 ,96.8 
-Q192,United States,4.1 ,94.3 
-Q192,China,1.6 ,97.9 
-Q193,United States,45.2 ,53.2 
-Q193,China,2.3 ,97.6 
-Q194,United States,7.4 ,90.9 
-Q194,China,2.6 ,96.8 
-Q195,United States,47.2 ,50.7 
-Q195,China,48.2 ,51.5 
-,,,
-,,,
-,,,
-,,,
+id,label,Agree (%),Disagree (%)
+Q177,China,19.1,80.4
+Q177,United States,6,51.9
+Q178,China,2.7,96.2
+Q178,United States,13.4,84.9
+Q179,China,1.4,98.5
+Q179,United States,5.8,92.3
+Q180,China,2.2,97.4
+Q180,United States,6.2,92
+Q181,China,3.6,95.7
+Q181,United States,4.7,93.4
+Q182,China,10.4,89.4
+Q182,United States,52.2,45.3
+Q183,China,2.5,97.4
+Q183,United States,21.3,76.9
+Q184,China,9.5,89.7
+Q184,United States,36.9,61.3
+Q185,China,24.4,75.2
+Q185,United States,57,41.3
+Q186,China,25.1,74.4
+Q186,United States,58.5,39.6
+Q187,China,6,93.6
+Q187,United States,18,80
+Q188,China,30.5,69
+Q188,United States,44,53.9
+Q189,China,3.1,96.5
+Q189,United States,3,95.3
+Q190,China,19.5,80.3
+Q190,United States,7.6,90.6
+Q191,China,2.9,96.8
+Q191,United States,7.8,90.4
+Q192,China,1.6,97.9
+Q192,United States,4.1,94.3
+Q193,China,2.3,97.6
+Q193,United States,45.2,53.2
+Q194,China,2.6,96.8
+Q194,United States,7.4,90.9
+Q195,China,48.2,51.5
+Q195,United States,47.2,50.7
