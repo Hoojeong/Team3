@@ -14,7 +14,9 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 On your terminal:
 
 git clone
+
 cd Team3/index.html
+
 python3 -m http.server/index.html
 
 
