@@ -1,16 +1,16 @@
 [
   {
-    "label": "United States",
-    "A great deal (%)": "11.1",
-    "Quite a lot (%)": "46",
-    "Not very much (%)": "35",
-    "None at all (%)": "6.7"
-  },
-  {
     "label": "China",
     "A great deal (%)": "28.5",
     "Quite a lot (%)": "57.4",
     "Not very much (%)": "12.3",
     "None at all (%)": "1.4"
+  },
+  {
+    "label": "United States",
+    "A great deal (%)": "11.1",
+    "Quite a lot (%)": "46",
+    "Not very much (%)": "35",
+    "None at all (%)": "6.7"
   }
 ]
