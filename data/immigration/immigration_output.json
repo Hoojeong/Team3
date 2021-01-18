@@ -1,24 +1,17 @@
 [
   {
     "id": "Q1",
-    "label": "United States",
-    "Agree (%)": "56.1",
-    "Disagree (%)": "7.2",
-    "Hard to say (%)": "35.1"
-  },
-  {
-    "id": "Q1",
     "label": "China",
     "Agree (%)": "53.8",
     "Disagree (%)": "14.3",
     "Hard to say (%)": "31.2"
   },
   {
-    "id": "Q2",
+    "id": "Q1",
     "label": "United States",
-    "Agree (%)": "58.4",
-    "Disagree (%)": "9.4",
-    "Hard to say (%)": "30.8"
+    "Agree (%)": "56.1",
+    "Disagree (%)": "7.2",
+    "Hard to say (%)": "35.1"
   },
   {
     "id": "Q2",
@@ -28,11 +21,11 @@
     "Hard to say (%)": "18.9"
   },
   {
-    "id": "Q3",
+    "id": "Q2",
     "label": "United States",
-    "Agree (%)": "30.7",
-    "Disagree (%)": "17.1",
-    "Hard to say (%)": "50.9"
+    "Agree (%)": "58.4",
+    "Disagree (%)": "9.4",
+    "Hard to say (%)": "30.8"
   },
   {
     "id": "Q3",
@@ -42,11 +35,11 @@
     "Hard to say (%)": "32.6"
   },
   {
-    "id": "Q4",
+    "id": "Q3",
     "label": "United States",
-    "Agree (%)": "41.3",
-    "Disagree (%)": "18.3",
-    "Hard to say (%)": "38.7"
+    "Agree (%)": "30.7",
+    "Disagree (%)": "17.1",
+    "Hard to say (%)": "50.9"
   },
   {
     "id": "Q4",
@@ -56,11 +49,11 @@
     "Hard to say (%)": "32.8"
   },
   {
-    "id": "Q5",
+    "id": "Q4",
     "label": "United States",
-    "Agree (%)": "49",
-    "Disagree (%)": "9.6",
-    "Hard to say (%)": "39.4"
+    "Agree (%)": "41.3",
+    "Disagree (%)": "18.3",
+    "Hard to say (%)": "38.7"
   },
   {
     "id": "Q5",
@@ -70,11 +63,11 @@
     "Hard to say (%)": "26.1"
   },
   {
-    "id": "Q6",
+    "id": "Q5",
     "label": "United States",
-    "Agree (%)": "32.9",
-    "Disagree (%)": "20.1",
-    "Hard to say (%)": "45.6"
+    "Agree (%)": "49",
+    "Disagree (%)": "9.6",
+    "Hard to say (%)": "39.4"
   },
   {
     "id": "Q6",
@@ -84,11 +77,11 @@
     "Hard to say (%)": "28.1"
   },
   {
-    "id": "Q7",
+    "id": "Q6",
     "label": "United States",
-    "Agree (%)": "40.2",
-    "Disagree (%)": "11.7",
-    "Hard to say (%)": "46.4"
+    "Agree (%)": "32.9",
+    "Disagree (%)": "20.1",
+    "Hard to say (%)": "45.6"
   },
   {
     "id": "Q7",
@@ -96,5 +89,12 @@
     "Agree (%)": "20.5",
     "Disagree (%)": "50.3",
     "Hard to say (%)": "28.7"
+  },
+  {
+    "id": "Q7",
+    "label": "United States",
+    "Agree (%)": "40.2",
+    "Disagree (%)": "11.7",
+    "Hard to say (%)": "46.4"
   }
 ]

@@ -1,12 +1,12 @@
 [
   {
-    "label": "United States",
-    "Agree": "6.0 ",
-    "Disagree": "51.9 "
+    "label": "China",
+    "Agree (%)": "19.1",
+    "Disagree (%)": "80.4"
   },
   {
-    "label": "China",
-    "Agree": "19.1 ",
-    "Disagree": "80.4 "
+    "label": "United States",
+    "Agree (%)": "6",
+    "Disagree (%)": "51.9"
   }
 ]

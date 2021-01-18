@@ -147,7 +147,7 @@ function drawchart(cssSelector,datafile){
                 .style("text-anchor", "end")
                 .text(function(d) { return d; });
 
-        d3.json("data/ethics/ethics-subtitles.json", function(error, subtitleData) {
+        d3.json("data/ethics/subtitles.json", function(error, subtitleData) {
 
             var myTitle = subtitleData[datafile]['title']
             var mySubTitle = subtitleData[datafile]['subtitle']
