@@ -9,7 +9,7 @@
 		<title>Immigration</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="css/immigration.css" />
+		<link rel="stylesheet" href="css/topics.css" />
 		<link rel="stylesheet" href="css/chart-styles.css" />
 	</head>
 	<body>
@@ -21,7 +21,7 @@
 					<ul>
 						<li><a href="index.html">Home</a></li>
 						<li><a href="about-data.html">About the data</a></li>
-						<li><a href="Ethics.html">Ethics and norms</a></li>
+						<li><a href="index.html#about_topics">Topics</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -32,9 +32,9 @@
 		<section id="main" class="wrapper style2 special">
       		<header class="major special">
 						<h2>Immigration</h2>
-						<p>We explored the attitudes of Americans and Chinese 
-						<br>toward immigration in the following questions.</p>
-			</header>
+
+						<p>How do Americans and Chinese view the effects of immigrants on their country?<br> <br></p>
+
 <!-- add buttons -->
 		    <div id="button-wrapper">
 		        <div class="btn-group">
@@ -59,7 +59,7 @@
 		          <button type="button" class="btn btn-info" onclick="update('#conflict-chart')" >Social Conflict</button>
 		        </div>
 		      </div>
-
+		</header>
 <!--charts using dataset so it works with the button -->
 
 		<div class="chart_container">
@@ -72,15 +72,10 @@
 			<svg class="charts" id="unemployment-chart"></svg>
 			<svg class="charts" id="conflict-chart"></svg>
 
-			<p class="chart_notes">*Please note, the translation of immigration in Chinese includes both internal and exteranal migration.
-				<br>
-				<br>
+			<p class="chart_notes">China: n = 3,036 &emsp; United States: n = 2,596<br><br>*Note: the word for immigration used in the Chinese survey (外地人) refers to migrants from both within and outside China.
 	
-					<br>Source: <a id="data_source" href="http://www.worldvaluessurvey.org/wvs.jsp">World Values Survey </a> 
-					<br>Data visualization from:<a id="data_source" href="https://github.com/code4policy/conversions/tree/master/example6"> D3</a> 
-				
-
-			</p> 
+			<br><br>Data source: <a id="data_source" href="http://www.worldvaluessurvey.org/wvs.jsp">World Values Survey </a> 
+			<br>Visualization<a id="data_source" href="https://github.com/code4policy/conversions/tree/master/example6"> source code</a> </p> 
 
 		</div>
 
@@ -106,7 +101,7 @@
 			<script src="js/util.js"></script>
 			<script src="js/main.js"></script>
 			<script src="https://d3js.org/d3.v3.min.js"></script>
-    		<script type="text/javascript" src="js/chart-script.js"></script>
+    		<script type="text/javascript" src="js/immigration-chart-script.js"></script>
 
 	</body>
 </html>
