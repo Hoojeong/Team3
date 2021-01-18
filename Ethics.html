@@ -9,7 +9,7 @@
 		<title>Ethical Norms and Values</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="css/immigration.css" />
+		<link rel="stylesheet" href="css/topics.css" />
 		<link rel="stylesheet" href="css/chart-styles.css" />
 	</head>
 	<body>
@@ -21,7 +21,7 @@
 					<ul>
 						<li><a href="index.html">Home</a></li>
 						<li><a href="about-data.html">About the data</a></li>
-						<li><a href="immigration.html">Immigration</a></li>
+						<li><a href="index.html#about_topics">Topics</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -32,21 +32,20 @@
 		<section id="main" class="wrapper style2 special">
       		<header class="major special">
 						<h2>Ethical Value and Norms</h2>
-						<p>What is the public opinion of each age group in the U.S and China about ethical values and norms?</p>
-			</header>
+						<p>How justifiable do Americans and Chinese see various practices and behaviors?<br> <br></p>
 <!-- add buttons -->
 		    <div id="button-wrapper">
 		        <div class="btn-group">
 		          <button type="button" class="btn btn-info" onclick="update('#homosexuality-chart')" >Homosexuality</button>
 		        </div>
 		        <div class="btn-group">
-		          <button type="button" class="btn btn-info" onclick="update('#sexbeforemarriage-chart')" >Pre-marriage Sex</button>
+		          <button type="button" class="btn btn-info" onclick="update('#sexbeforemarriage-chart')" >Sex Before Marriage</button>
 		        </div>
 		        <div class="btn-group">
-		        <button type="button" class="btn btn-info" onclick="update('#beatingman-chart')" >Beating Man</button>
+		        <button type="button" class="btn btn-info" onclick="update('#beatingman-chart')" >Domestic Violence</button>
 		        </div>
 		        <div class="btn-group">
-		          <button type="button" class="btn btn-info" onclick="update('#beatingparents-chart')" >Beating Parents</button>
+		          <button type="button" class="btn btn-info" onclick="update('#beatingparents-chart')" >Corporal Punishment</button>
 		        </div>
 		        <div class="btn-group">
 		          <button type="button" class="btn btn-info" onclick="update('#ethics-terrorism-chart')" >Terrorism</button>
@@ -58,9 +57,10 @@
 		          <button type="button" class="btn btn-info" onclick="update('#deathpanelty-chart')" >Death Penalty</button>
 		        </div>
 		      </div>
+		      </header>
 
 <!--charts using dataset so it works with the button -->
-
+		<div class="chart_container">
 			<svg class="charts" id="homosexuality-chart"></svg>
 			<svg class="charts" id="sexbeforemarriage-chart"></svg>
 			<svg class="charts" id="beatingman-chart"></svg>
@@ -69,6 +69,8 @@
 			<svg class="charts" id="casualsex-chart"></svg>
 			<svg class="charts" id="deathpanelty-chart"></svg>
 
+			<p class="chart_notes">China: n = 3,036<br>United States: n = 2,596</p>
+		</div>
 	</section>
 
 		<!-- Footer -->
