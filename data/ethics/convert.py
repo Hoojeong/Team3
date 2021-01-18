@@ -10,7 +10,7 @@ with open(filename, "w") as f:
 	json.dump(opinion, f, indent=2)
 
 # step1 make a list of unique id: Q1, Q2...
-unique_ids=["Q1","Q2","Q3","Q4","Q5","Q6","Q7"]
+unique_ids=["Q177","Q178","Q179","Q180","Q181","Q182","Q183","Q184","Q185","Q186","Q187","Q188","Q189","Q190","Q191","Q192","Q193","Q194","Q195"]
 
 # loop over the list
 for n in unique_ids: 

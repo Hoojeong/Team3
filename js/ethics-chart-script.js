@@ -1,4 +1,4 @@
-function drawchart(cssSelector,datafile,title){
+function drawchart(cssSelector,datafile){
 
     function verticalWrap(text, width) {
         text.each(function() {
@@ -29,8 +29,8 @@ function drawchart(cssSelector,datafile,title){
     d3.json(datafile, function(error, dataset) {
         if (error) throw error;
 
-//set position variables
-        var margin = {top: (parseInt(d3.select(cssSelector).style('height'), 10)/5), right: (parseInt(d3.select(cssSelector).style('width'), 9)/3.3), bottom: (parseInt(d3.select(cssSelector).style('height'), 10)/20), left: (parseInt(d3.select(cssSelector).style('width'), 11)/8)},
+        //set position variables
+        var margin = {top: (parseInt(d3.select(cssSelector).style('height'), 10)/5), right: (parseInt(d3.select(cssSelector).style('width'), 9)/3), bottom: (parseInt(d3.select(cssSelector).style('height'), 10)/20), left: (parseInt(d3.select(cssSelector).style('width'), 11)/6)},
                 width = parseInt(d3.select(cssSelector).style('width'), 10) - margin.left - margin.right,
                 height = parseInt(d3.select(cssSelector).style('height'), 10) - margin.top - margin.bottom;
 
@@ -42,10 +42,10 @@ function drawchart(cssSelector,datafile,title){
         var x = d3.scale.linear()
                 .range([0, width]);
 
-//set colors
+        //set colors
         var color = d3.scale.ordinal()
                 // .range(colorRange.range());
-                .range(["rgba(60,179,113,1)", "rgba(255,165,0,1)", "rgba(180,180,180,0.4)", "#c0d6e4"]);
+                .range(["rgba(60,179,113,1)", "rgba(255,165,0,1)", "rgba(60,179,113,0.5)", "rgba(255,165,0,0.5)"]);
 
         var xAxis = d3.svg.axis()
                 .scale(x)
@@ -135,31 +135,48 @@ function drawchart(cssSelector,datafile,title){
                 .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
 
         legend.append("rect")
-                .attr("x", width + 146)
+                .attr("x", width + 186)
                 .attr("width", 18)
                 .attr("height", 18)
                 .style("fill", color);
 
         legend.append("text")
-                .attr("x", width + 140)
+                .attr("x", width + 180)
                 .attr("y", 9)
                 .attr("dy", ".35em")
                 .style("text-anchor", "end")
                 .text(function(d) { return d; });
 
-        svg.append("text")
-                .attr("x", (width / 2))             
-                .attr("y", 0 - (margin.top / 2))
-                .attr("text-anchor", "middle")   
-                .style("font-size", "20px") 
-                .text(title);
+        d3.json("data/ethics/ethics-subtitles.json", function(error, subtitleData) {
+
+            var myTitle = subtitleData[datafile]['title']
+            var mySubTitle = subtitleData[datafile]['subtitle']
+
+            svg.append("text")
+                    .attr("x", (width / 2))
+                    .attr("y", 0 - (margin.top / 2))
+                    .attr("text-anchor", "middle")
+                    .attr("class", "subtitle")
+                    .style("font-size", "10px")
+                    .text(mySubTitle);
+
+            svg.append("text")
+                    .attr("x", (width / 2))
+                    .attr("y", 0 - (margin.top / 2) + 20)
+                    .attr("text-anchor", "middle")
+                    .attr("class", "title")
+                    .style("font-size", "20px")
+                    .text(myTitle);
+
+        })
+
     });
 }
 
 // function for buttons to show and hide charts
 function update(cssSelector) {
 
-// hide anything that matches .charts 
+// hide anything that matches .charts
   for(x of document.querySelectorAll(".charts")){
     x.style.display='none';
     }
@@ -168,14 +185,25 @@ function update(cssSelector) {
     x.style.display='';
     }
 }
-// call function to create charts
-drawchart("#homosexuality-chart","data/ethics/Q1.json", "HOMOSEXUALITY")
-drawchart("#sexbeforemarriage-chart","data/ethics/Q2.json", "SEX BEFORE MARRIAGE")
-drawchart("#beatingman-chart","data/ethics/Q3.json", "A MAN BEATING HIS WIFE")
-drawchart("#beatingparents-chart","data/ethics/Q4.json", "PARENTS BEATING THEIR CHILDREN")
-drawchart("#ethics-terrorism-chart","data/ethics/Q5.json", "TERRORISM")
-drawchart("#casualsex-chart","data/ethics/Q6.json", "HAVING CASUAL SEX")
-drawchart("#deathpanelty-chart","data/ethics/Q7.json", "DEATH PENALTY")
+drawchart("#ineligible-benefits","data/ethics/Q177.json")
+drawchart("#free-riding","data/ethics/Q178.json")
+drawchart("#stealing","data/ethics/Q179.json")
+drawchart("#tax-fraud","data/ethics/Q180.json")
+drawchart("#bribery","data/ethics/Q181.json")
+drawchart("#homosexuality","data/ethics/Q182.json")
+drawchart("#prostitution","data/ethics/Q183.json")
+drawchart("#abortion","data/ethics/Q184.json")
+drawchart("#divorce","data/ethics/Q185.json")
+drawchart("#premarital-sex","data/ethics/Q186.json")
+drawchart("#suicide","data/ethics/Q187.json")
+drawchart("#euthanasia","data/ethics/Q188.json")
+drawchart("#domestic-violence","data/ethics/Q189.json")
+drawchart("#corporal-punishment","data/ethics/Q190.json")
+drawchart("#physical-violence","data/ethics/Q191.json")
+drawchart("#terrorism","data/ethics/Q192.json")
+drawchart("#casual-sex","data/ethics/Q193.json")
+drawchart("#political-violence","data/ethics/Q194.json")
+drawchart("#death-penalty","data/ethics/Q195.json")
 
 //initiat chart
-update("#homosexuality-chart")
+update("#ineligible-benefits")
