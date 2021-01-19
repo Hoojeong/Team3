@@ -66,6 +66,20 @@
     margin-bottom: 60px;
 }
 
+#button-wrapper-1 {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#button-wrapper-2 {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
 .btn-group {
   margin-top: 1px;
   margin-left:10px;

@@ -30,7 +30,7 @@ function drawchart(cssSelector,datafile){
         if (error) throw error;
 
         //set position variables
-        var margin = {top: (parseInt(d3.select(cssSelector).style('height'), 10)/5), right: (parseInt(d3.select(cssSelector).style('width'), 9)/3), bottom: (parseInt(d3.select(cssSelector).style('height'), 10)/20), left: (parseInt(d3.select(cssSelector).style('width'), 11)/6)},
+        var margin = {top: (parseInt(d3.select(cssSelector).style('height'), 10)/5), right: (parseInt(d3.select(cssSelector).style('width'), 9)/3.3), bottom: (parseInt(d3.select(cssSelector).style('height'), 10)/20), left: (parseInt(d3.select(cssSelector).style('width'), 11)/8)},
                 width = parseInt(d3.select(cssSelector).style('width'), 10) - margin.left - margin.right,
                 height = parseInt(d3.select(cssSelector).style('height'), 10) - margin.top - margin.bottom;
 
@@ -45,7 +45,7 @@ function drawchart(cssSelector,datafile){
         //set colors
         var color = d3.scale.ordinal()
                 // .range(colorRange.range());
-                .range(["rgba(60,179,113,1)", "rgba(255,165,0,1)", "rgba(60,179,113,0.5)", "rgba(255,165,0,0.5)"]);
+                .range(["rgba(60,179,113,1)", "rgba(255,165,0,1)", "rgba(180,180,180,0.4)", "#c0d6e4"]);
 
         var xAxis = d3.svg.axis()
                 .scale(x)
@@ -135,19 +135,19 @@ function drawchart(cssSelector,datafile){
                 .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
 
         legend.append("rect")
-                .attr("x", width + 186)
+                .attr("x", width + 146)
                 .attr("width", 18)
                 .attr("height", 18)
                 .style("fill", color);
 
         legend.append("text")
-                .attr("x", width + 180)
+                .attr("x", width + 140)
                 .attr("y", 9)
                 .attr("dy", ".35em")
                 .style("text-anchor", "end")
                 .text(function(d) { return d; });
 
-        d3.json("data/ethics/subtitles.json", function(error, subtitleData) {
+        d3.json("data/immigration/subtitles.json", function(error, subtitleData) {
 
             var myTitle = subtitleData[datafile]['title']
             var mySubTitle = subtitleData[datafile]['subtitle']
@@ -185,25 +185,14 @@ function update(cssSelector) {
     x.style.display='';
     }
 }
-drawchart("#ineligible-benefits","data/ethics/Q177.json")
-drawchart("#free-riding","data/ethics/Q178.json")
-drawchart("#stealing","data/ethics/Q179.json")
-drawchart("#tax-fraud","data/ethics/Q180.json")
-drawchart("#bribery","data/ethics/Q181.json")
-drawchart("#homosexuality","data/ethics/Q182.json")
-drawchart("#prostitution","data/ethics/Q183.json")
-drawchart("#abortion","data/ethics/Q184.json")
-drawchart("#divorce","data/ethics/Q185.json")
-drawchart("#premarital-sex","data/ethics/Q186.json")
-drawchart("#suicide","data/ethics/Q187.json")
-drawchart("#euthanasia","data/ethics/Q188.json")
-drawchart("#domestic-violence","data/ethics/Q189.json")
-drawchart("#corporal-punishment","data/ethics/Q190.json")
-drawchart("#physical-violence","data/ethics/Q191.json")
-drawchart("#terrorism","data/ethics/Q192.json")
-drawchart("#casual-sex","data/ethics/Q193.json")
-drawchart("#political-violence","data/ethics/Q194.json")
-drawchart("#death-penalty","data/ethics/Q195.json")
+// call function to create charts
+drawchart("#jobs-chart","data/immigration/Q1.json")
+drawchart("#diversity-chart","data/immigration/Q2.json")
+drawchart("#crime-chart","data/immigration/Q3.json")
+drawchart("#terrorism-chart","data/immigration/Q4.json")
+drawchart("#poor-chart","data/immigration/Q5.json")
+drawchart("#unemployment-chart","data/immigration/Q6.json")
+drawchart("#conflict-chart","data/immigration/Q7.json")
 
 //initiat chart
-update("#ineligible-benefits")
+update("#jobs-chart")

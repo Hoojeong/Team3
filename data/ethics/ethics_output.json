@@ -1,114 +1,230 @@
 [
   {
-    "id": "Q1",
-    "label": "United States",
-    "Up to 29": "6.78",
-    "30-49": "6.52",
-    "50 and more": "5.65"
-  },
-  {
-    "id": "Q1",
+    "id": "Q177",
     "label": "China",
-    "Up to 29": "3.19",
-    "30-49": "2.22",
-    "50 and more": "1.73"
+    "Agree (%)": "19.1",
+    "Disagree (%)": "80.4"
   },
   {
-    "id": "Q2",
+    "id": "Q177",
     "label": "United States",
-    "Up to 29": "6.68",
-    "30-49": "6.67",
-    "50 and more": "6.27"
+    "Agree (%)": "6",
+    "Disagree (%)": "51.9"
   },
   {
-    "id": "Q2",
+    "id": "Q178",
     "label": "China",
-    "Up to 29": "4.31",
-    "30-49": "3.85",
-    "50 and more": "3.03"
+    "Agree (%)": "2.7",
+    "Disagree (%)": "96.2"
   },
   {
-    "id": "Q3",
+    "id": "Q178",
     "label": "United States",
-    "Up to 29": "1.66",
-    "30-49": "1.56",
-    "50 and more": "1.18"
+    "Agree (%)": "13.4",
+    "Disagree (%)": "84.9"
   },
   {
-    "id": "Q3",
+    "id": "Q179",
     "label": "China",
-    "Up to 29": "1.61",
-    "30-49": "1.57",
-    "50 and more": "1.5"
+    "Agree (%)": "1.4",
+    "Disagree (%)": "98.5"
   },
   {
-    "id": "Q4",
+    "id": "Q179",
     "label": "United States",
-    "Up to 29": "2.53",
-    "30-49": "2.12",
-    "50 and more": "1.71"
+    "Agree (%)": "5.8",
+    "Disagree (%)": "92.3"
   },
   {
-    "id": "Q4",
+    "id": "Q180",
     "label": "China",
-    "Up to 29": "3.01",
-    "30-49": "3.28",
-    "50 and more": "3.5"
+    "Agree (%)": "2.2",
+    "Disagree (%)": "97.4"
   },
   {
-    "id": "Q5",
+    "id": "Q180",
     "label": "United States",
-    "Up to 29": "1.33",
-    "30-49": "1.67",
-    "50 and more": "1.91"
+    "Agree (%)": "6.2",
+    "Disagree (%)": "92"
   },
   {
-    "id": "Q5",
+    "id": "Q181",
     "label": "China",
-    "Up to 29": "1.38",
-    "30-49": "1.36",
-    "50 and more": "1.25"
+    "Agree (%)": "3.6",
+    "Disagree (%)": "95.7"
   },
   {
-    "id": "Q6",
+    "id": "Q181",
     "label": "United States",
-    "Up to 29": "6.32",
-    "30-49": "5.84",
-    "50 and more": "4.8"
+    "Agree (%)": "4.7",
+    "Disagree (%)": "93.4"
   },
   {
-    "id": "Q6",
+    "id": "Q182",
     "label": "China",
-    "Up to 29": "1.59",
-    "30-49": "1.52",
-    "50 and more": "1.39"
+    "Agree (%)": "10.4",
+    "Disagree (%)": "89.4"
   },
   {
-    "id": "Q7",
+    "id": "Q182",
     "label": "United States",
-    "Up to 29": "5.04",
-    "30-49": "5.65",
-    "50 and more": "5.71"
+    "Agree (%)": "52.2",
+    "Disagree (%)": "45.3"
   },
   {
-    "id": "Q7",
+    "id": "Q183",
     "label": "China",
-    "Up to 29": "4.39",
-    "30-49": "5.34",
-    "50 and more": "5.99"
+    "Agree (%)": "2.5",
+    "Disagree (%)": "97.4"
   },
   {
-    "id": "",
-    "label": "",
-    "Up to 29": "",
-    "30-49": "",
-    "50 and more": ""
+    "id": "Q183",
+    "label": "United States",
+    "Agree (%)": "21.3",
+    "Disagree (%)": "76.9"
   },
   {
-    "id": "",
-    "label": "",
-    "Up to 29": "",
-    "30-49": "",
-    "50 and more": ""
+    "id": "Q184",
+    "label": "China",
+    "Agree (%)": "9.5",
+    "Disagree (%)": "89.7"
+  },
+  {
+    "id": "Q184",
+    "label": "United States",
+    "Agree (%)": "36.9",
+    "Disagree (%)": "61.3"
+  },
+  {
+    "id": "Q185",
+    "label": "China",
+    "Agree (%)": "24.4",
+    "Disagree (%)": "75.2"
+  },
+  {
+    "id": "Q185",
+    "label": "United States",
+    "Agree (%)": "57",
+    "Disagree (%)": "41.3"
+  },
+  {
+    "id": "Q186",
+    "label": "China",
+    "Agree (%)": "25.1",
+    "Disagree (%)": "74.4"
+  },
+  {
+    "id": "Q186",
+    "label": "United States",
+    "Agree (%)": "58.5",
+    "Disagree (%)": "39.6"
+  },
+  {
+    "id": "Q187",
+    "label": "China",
+    "Agree (%)": "6",
+    "Disagree (%)": "93.6"
+  },
+  {
+    "id": "Q187",
+    "label": "United States",
+    "Agree (%)": "18",
+    "Disagree (%)": "80"
+  },
+  {
+    "id": "Q188",
+    "label": "China",
+    "Agree (%)": "30.5",
+    "Disagree (%)": "69"
+  },
+  {
+    "id": "Q188",
+    "label": "United States",
+    "Agree (%)": "44",
+    "Disagree (%)": "53.9"
+  },
+  {
+    "id": "Q189",
+    "label": "China",
+    "Agree (%)": "3.1",
+    "Disagree (%)": "96.5"
+  },
+  {
+    "id": "Q189",
+    "label": "United States",
+    "Agree (%)": "3",
+    "Disagree (%)": "95.3"
+  },
+  {
+    "id": "Q190",
+    "label": "China",
+    "Agree (%)": "19.5",
+    "Disagree (%)": "80.3"
+  },
+  {
+    "id": "Q190",
+    "label": "United States",
+    "Agree (%)": "7.6",
+    "Disagree (%)": "90.6"
+  },
+  {
+    "id": "Q191",
+    "label": "China",
+    "Agree (%)": "2.9",
+    "Disagree (%)": "96.8"
+  },
+  {
+    "id": "Q191",
+    "label": "United States",
+    "Agree (%)": "7.8",
+    "Disagree (%)": "90.4"
+  },
+  {
+    "id": "Q192",
+    "label": "China",
+    "Agree (%)": "1.6",
+    "Disagree (%)": "97.9"
+  },
+  {
+    "id": "Q192",
+    "label": "United States",
+    "Agree (%)": "4.1",
+    "Disagree (%)": "94.3"
+  },
+  {
+    "id": "Q193",
+    "label": "China",
+    "Agree (%)": "2.3",
+    "Disagree (%)": "97.6"
+  },
+  {
+    "id": "Q193",
+    "label": "United States",
+    "Agree (%)": "45.2",
+    "Disagree (%)": "53.2"
+  },
+  {
+    "id": "Q194",
+    "label": "China",
+    "Agree (%)": "2.6",
+    "Disagree (%)": "96.8"
+  },
+  {
+    "id": "Q194",
+    "label": "United States",
+    "Agree (%)": "7.4",
+    "Disagree (%)": "90.9"
+  },
+  {
+    "id": "Q195",
+    "label": "China",
+    "Agree (%)": "48.2",
+    "Disagree (%)": "51.5"
+  },
+  {
+    "id": "Q195",
+    "label": "United States",
+    "Agree (%)": "47.2",
+    "Disagree (%)": "50.7"
   }
 ]

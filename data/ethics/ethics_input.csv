@@ -1,17 +1,39 @@
-id,label,Up to 29,30-49,50 and more
-Q1,United States,6.78,6.52,5.65
-Q1,China,3.19,2.22,1.73
-Q2,United States,6.68,6.67,6.27
-Q2,China,4.31,3.85,3.03
-Q3,United States,1.66,1.56,1.18
-Q3,China,1.61,1.57,1.5
-Q4,United States,2.53,2.12,1.71
-Q4,China,3.01,3.28,3.5
-Q5,United States,1.33,1.67,1.91
-Q5,China,1.38,1.36,1.25
-Q6,United States,6.32,5.84,4.8
-Q6,China,1.59,1.52,1.39
-Q7,United States,5.04,5.65,5.71
-Q7,China,4.39,5.34,5.99
-,,,,
-,,,,
+id,label,Agree (%),Disagree (%)
+Q177,China,19.1,80.4
+Q177,United States,6,51.9
+Q178,China,2.7,96.2
+Q178,United States,13.4,84.9
+Q179,China,1.4,98.5
+Q179,United States,5.8,92.3
+Q180,China,2.2,97.4
+Q180,United States,6.2,92
+Q181,China,3.6,95.7
+Q181,United States,4.7,93.4
+Q182,China,10.4,89.4
+Q182,United States,52.2,45.3
+Q183,China,2.5,97.4
+Q183,United States,21.3,76.9
+Q184,China,9.5,89.7
+Q184,United States,36.9,61.3
+Q185,China,24.4,75.2
+Q185,United States,57,41.3
+Q186,China,25.1,74.4
+Q186,United States,58.5,39.6
+Q187,China,6,93.6
+Q187,United States,18,80
+Q188,China,30.5,69
+Q188,United States,44,53.9
+Q189,China,3.1,96.5
+Q189,United States,3,95.3
+Q190,China,19.5,80.3
+Q190,United States,7.6,90.6
+Q191,China,2.9,96.8
+Q191,United States,7.8,90.4
+Q192,China,1.6,97.9
+Q192,United States,4.1,94.3
+Q193,China,2.3,97.6
+Q193,United States,45.2,53.2
+Q194,China,2.6,96.8
+Q194,United States,7.4,90.9
+Q195,China,48.2,51.5
+Q195,United States,47.2,50.7

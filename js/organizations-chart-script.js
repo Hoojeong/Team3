@@ -45,7 +45,7 @@ function drawchart(cssSelector,datafile){
         //set colors
         var color = d3.scale.ordinal()
                 // .range(colorRange.range());
-                .range(["rgba(60,179,113,1)", "rgba(255,165,0,1)", "rgba(60,179,113,0.5)", "rgba(255,165,0,0.5)"]);
+                .range(["rgba(60,179,113,1)", "rgba(60,179,113,0.5)", "rgba(255,165,0,0.5)", "rgba(255,165,0,1)"]);
 
         var xAxis = d3.svg.axis()
                 .scale(x)
@@ -147,7 +147,7 @@ function drawchart(cssSelector,datafile){
                 .style("text-anchor", "end")
                 .text(function(d) { return d; });
 
-        d3.json("data/ethics/subtitles.json", function(error, subtitleData) {
+        d3.json("data/organizations/subtitles.json", function(error, subtitleData) {
 
             var myTitle = subtitleData[datafile]['title']
             var mySubTitle = subtitleData[datafile]['subtitle']
@@ -185,25 +185,23 @@ function update(cssSelector) {
     x.style.display='';
     }
 }
-drawchart("#ineligible-benefits","data/ethics/Q177.json")
-drawchart("#free-riding","data/ethics/Q178.json")
-drawchart("#stealing","data/ethics/Q179.json")
-drawchart("#tax-fraud","data/ethics/Q180.json")
-drawchart("#bribery","data/ethics/Q181.json")
-drawchart("#homosexuality","data/ethics/Q182.json")
-drawchart("#prostitution","data/ethics/Q183.json")
-drawchart("#abortion","data/ethics/Q184.json")
-drawchart("#divorce","data/ethics/Q185.json")
-drawchart("#premarital-sex","data/ethics/Q186.json")
-drawchart("#suicide","data/ethics/Q187.json")
-drawchart("#euthanasia","data/ethics/Q188.json")
-drawchart("#domestic-violence","data/ethics/Q189.json")
-drawchart("#corporal-punishment","data/ethics/Q190.json")
-drawchart("#physical-violence","data/ethics/Q191.json")
-drawchart("#terrorism","data/ethics/Q192.json")
-drawchart("#casual-sex","data/ethics/Q193.json")
-drawchart("#political-violence","data/ethics/Q194.json")
-drawchart("#death-penalty","data/ethics/Q195.json")
+drawchart("#armed-forces","data/organizations/Q65.json")
+drawchart("#press","data/organizations/Q66.json")
+drawchart("#television","data/organizations/Q67.json")
+drawchart("#labour","data/organizations/Q68.json")
+drawchart("#police","data/organizations/Q69.json")
+drawchart("#courts","data/organizations/Q70.json")
+drawchart("#government","data/organizations/Q71.json")
+drawchart("#political-parties","data/organizations/Q72.json")
+drawchart("#parliament","data/organizations/Q73.json")
+drawchart("#civil-services","data/organizations/Q74.json")
+drawchart("#universities","data/organizations/Q75.json")
+drawchart("#elections","data/organizations/Q76.json")
+drawchart("#major-companies","data/organizations/Q77.json")
+drawchart("#banks","data/organizations/Q78.json")
+drawchart("#environmental-organizations","data/organizations/Q79.json")
+drawchart("#women-organizations","data/organizations/Q77.json")
+drawchart("#charities","data/organizations/Q78.json")
 
 //initiat chart
-update("#ineligible-benefits")
+update("#armed-forces")

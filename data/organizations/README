@@ -1,0 +1,7 @@
+We used the below steps to extract data for the visualizations related to organizations.
+
+Step 1: access pdf of aggregated World Values Survey results for China (http://www.worldvaluessurvey.org/WVSDocumentationWV7.jsp) and for the US http://www.worldvaluessurvey.org/WVSDocumentationWV7.jsp).
+
+Step 2: transcribe relevant data into a csv file (organizations_input.csv).
+
+Step 3: convert to json using python (convert-organizations-data.py).

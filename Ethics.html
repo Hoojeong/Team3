@@ -9,7 +9,7 @@
 		<title>Ethical Norms and Values</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="css/immigration.css" />
+		<link rel="stylesheet" href="css/topics.css" />
 		<link rel="stylesheet" href="css/chart-styles.css" />
 	</head>
 	<body>
@@ -21,7 +21,7 @@
 					<ul>
 						<li><a href="index.html">Home</a></li>
 						<li><a href="about-data.html">About the data</a></li>
-						<li><a href="immigration.html">Immigration</a></li>
+						<li><a href="index.html#about_topics">Topics</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -31,44 +31,103 @@
 <!-- Main -->
 		<section id="main" class="wrapper style2 special">
       		<header class="major special">
-						<h2>Ethical Value and Norms</h2>
-						<p>What is the public opinion of each age group in the U.S and China about ethical values and norms?</p>
-			</header>
+						<h2>Ethical Values and Norms</h2>
+						<p>How justifiable do Americans and Chinese see various practices and behaviors?<br> <br></p>
 <!-- add buttons -->
+<!-- add buttons -->
+		    <div id="button-wrapper-1">
+		        <div class="btn-group">
+		          <button type="button" class="btn btn-info" onclick="update('#ineligible-benefits')" >ineligible benefits</a></button>
+		        </div>
+		        <div class="btn-group">
+		        <button type="button" class="btn btn-info" onclick="update('#free-riding')" >free riding</button>
+		        </div>
+		        <div class="btn-group">
+		        <button type="button" class="btn btn-info" onclick="update('#stealing')" >stealing</button>
+		        </div>
+		        <div class="btn-group">
+		        <button type="button" class="btn btn-info" onclick="update('#tax-fraud')" >tax fraud</button>
+		        </div>
+		        <div class="btn-group">
+		        <button type="button" class="btn btn-info" onclick="update('#bribery')" >bribery</button>
+		        </div>
+		        <div class="btn-group">
+		        <button type="button" class="btn btn-info" onclick="update('#homosexuality')" >homosexuality</button>
+		        </div>
+		    </div>   
+		    <div id="button-wrapper-2">
+		        <div class="btn-group">
+		        <button type="button" class="btn btn-info" onclick="update('#prostitution')" >prostitution</button>
+		        </div><div class="btn-group">
+		        <button type="button" class="btn btn-info" onclick="update('#abortion')" >abortion</button>
+		        </div>
+		        <div class="btn-group">
+		        <button type="button" class="btn btn-info" onclick="update('#divorce')" >divorce</button>
+		        </div>
+		        <div class="btn-group">
+		        <button type="button" class="btn btn-info" onclick="update('#premarital-sex')" >premarital sex</button>
+		        </div>
+		        <div class="btn-group">
+		        <button type="button" class="btn btn-info" onclick="update('#suicide')" >suicide</button>
+		        </div>
+		        <div class="btn-group">
+		        <button type="button" class="btn btn-info" onclick="update('#euthanasia')" >euthanasia</button>
+		        </div>
+		        <div class="btn-group">
+		        <button type="button" class="btn btn-info" onclick="update('#domestic-violence')" >domestic violence</button>
+		        </div>
+		    </div>
 		    <div id="button-wrapper">
 		        <div class="btn-group">
-		          <button type="button" class="btn btn-info" onclick="update('#homosexuality-chart')" >Homosexuality</button>
+		        <button type="button" class="btn btn-info" onclick="update('#corporal-punishment')" >corporal punishment</button>
 		        </div>
 		        <div class="btn-group">
-		          <button type="button" class="btn btn-info" onclick="update('#sexbeforemarriage-chart')" >Pre-marriage Sex</button>
+		        <button type="button" class="btn btn-info" onclick="update('#physical-violence')" >physical violence</button>
 		        </div>
 		        <div class="btn-group">
-		        <button type="button" class="btn btn-info" onclick="update('#beatingman-chart')" >Beating Man</button>
+		        <button type="button" class="btn btn-info" onclick="update('#terrorism')" >terrorism</button>
 		        </div>
 		        <div class="btn-group">
-		          <button type="button" class="btn btn-info" onclick="update('#beatingparents-chart')" >Beating Parents</button>
+		        <button type="button" class="btn btn-info" onclick="update('#casual-sex')" >casual sex</button>
 		        </div>
 		        <div class="btn-group">
-		          <button type="button" class="btn btn-info" onclick="update('#ethics-terrorism-chart')" >Terrorism</button>
+		        <button type="button" class="btn btn-info" onclick="update('#political-violence')" >political violence</button>
 		        </div>
 		        <div class="btn-group">
-		          <button type="button" class="btn btn-info" onclick="update('#casualsex-chart')" >Casual Sex</button>
-		        </div>
-		        <div class="btn-group">
-		          <button type="button" class="btn btn-info" onclick="update('#deathpanelty-chart')" >Death Penalty</button>
+		        <button type="button" class="btn btn-info" onclick="update('#death-penalty')" >death penalty</button>
 		        </div>
 		      </div>
+		</header>
 
 <!--charts using dataset so it works with the button -->
+		<div class="chart_container">
 
-			<svg class="charts" id="homosexuality-chart"></svg>
-			<svg class="charts" id="sexbeforemarriage-chart"></svg>
-			<svg class="charts" id="beatingman-chart"></svg>
-			<svg class="charts" id="beatingparents-chart"></svg>
-			<svg class="charts" id="ethics-terrorism-chart"></svg>
-			<svg class="charts" id="casualsex-chart"></svg>
-			<svg class="charts" id="deathpanelty-chart"></svg>
+			<svg class="charts" id="ineligible-benefits"></svg>
+			<svg class="charts" id="free-riding"></svg>
+			<svg class="charts" id="stealing"></svg>
+			<svg class="charts" id="tax-fraud"></svg>
+			<svg class="charts" id="bribery"></svg>
+			<svg class="charts" id="homosexuality"></svg>
+			<svg class="charts" id="prostitution"></svg>
+			<svg class="charts" id="abortion"></svg>
+			<svg class="charts" id="divorce"></svg>
+			<svg class="charts" id="premarital-sex"></svg>
+			<svg class="charts" id="suicide"></svg>
+			<svg class="charts" id="euthanasia"></svg>
+			<svg class="charts" id="domestic-violence"></svg>
+			<svg class="charts" id="corporal-punishment"></svg>
+			<svg class="charts" id="physical-violence"></svg>
+			<svg class="charts" id="terrorism"></svg>
+			<svg class="charts" id="casual-sex"></svg>
+			<svg class="charts" id="political-violence"></svg>
+			<svg class="charts" id="death-penalty"></svg>
 
+			<p class="chart_notes">United States: n = 2,596 &emsp; China: n = 3,036<br><br>*Note: interviewees were asked how justifiable various practices and behaviors were on a scale of 1-10. We grouped those that responded between 1 and 5 as 'disagree' and those that responded between 6 and 10 as 'agree'.
+
+			<br><br>Data source: <a id="data_source" href="http://www.worldvaluessurvey.org/WVSDocumentationWV7.jsp">World Values Survey </a> 
+			<br>Visualization<a id="data_source" href="https://github.com/code4policy/conversions/tree/master/example6"> source code</a> </p>
+
+		</div>
 	</section>
 
 		<!-- Footer -->
@@ -76,9 +135,10 @@
 				<div class="container">
 
 					<ul class="copyright">
-						<li>&copy; Untitled</li>
+						<li>&copy; <a href="./index.html#about_us">Cope4Policy 2021 Team B3 </a></li>
 						<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
-						<li>Images: <a href="http://unsplash.com">Unsplash</a></li>
+						<li><a href="#">Back to Top</a></li>
+						<li><a href="https://github.com/Hoojeong/Team3">Github Source Code</a></li>
 					</ul>
 				</div>
 			</footer>

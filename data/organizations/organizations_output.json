@@ -1,0 +1,274 @@
+[
+  {
+    "id": "Q65",
+    "label": "China",
+    "A great deal (%)": "49.3",
+    "Quite a lot (%)": "45.8",
+    "Not very much (%)": "4",
+    "None at all (%)": "0.5"
+  },
+  {
+    "id": "Q65",
+    "label": "United States",
+    "A great deal (%)": "32.8",
+    "Quite a lot (%)": "47.5",
+    "Not very much (%)": "15.2",
+    "None at all (%)": "3.3"
+  },
+  {
+    "id": "Q66",
+    "label": "China",
+    "A great deal (%)": "11.3",
+    "Quite a lot (%)": "56.9",
+    "Not very much (%)": "29.3",
+    "None at all (%)": "2.1"
+  },
+  {
+    "id": "Q66",
+    "label": "United States",
+    "A great deal (%)": "5.3",
+    "Quite a lot (%)": "24.2",
+    "Not very much (%)": "45.9",
+    "None at all (%)": "23.8"
+  },
+  {
+    "id": "Q67",
+    "label": "China",
+    "A great deal (%)": "11.8",
+    "Quite a lot (%)": "61.1",
+    "Not very much (%)": "25",
+    "None at all (%)": "1.7"
+  },
+  {
+    "id": "Q67",
+    "label": "United States",
+    "A great deal (%)": "2.9",
+    "Quite a lot (%)": "19.5",
+    "Not very much (%)": "59.6",
+    "None at all (%)": "16.9"
+  },
+  {
+    "id": "Q68",
+    "label": "China",
+    "A great deal (%)": "8.5",
+    "Quite a lot (%)": "58.1",
+    "Not very much (%)": "27.3",
+    "None at all (%)": "2.7"
+  },
+  {
+    "id": "Q68",
+    "label": "United States",
+    "A great deal (%)": "5.9",
+    "Quite a lot (%)": "26.7",
+    "Not very much (%)": "49.4",
+    "None at all (%)": "16"
+  },
+  {
+    "id": "Q69",
+    "label": "China",
+    "A great deal (%)": "28.7",
+    "Quite a lot (%)": "55.8",
+    "Not very much (%)": "13.1",
+    "None at all (%)": "2"
+  },
+  {
+    "id": "Q69",
+    "label": "United States",
+    "A great deal (%)": "20.7",
+    "Quite a lot (%)": "47.5",
+    "Not very much (%)": "24.5",
+    "None at all (%)": "6.5"
+  },
+  {
+    "id": "Q70",
+    "label": "China",
+    "A great deal (%)": "28.5",
+    "Quite a lot (%)": "57.4",
+    "Not very much (%)": "12.3",
+    "None at all (%)": "1.4"
+  },
+  {
+    "id": "Q70",
+    "label": "United States",
+    "A great deal (%)": "11.1",
+    "Quite a lot (%)": "46",
+    "Not very much (%)": "35",
+    "None at all (%)": "6.7"
+  },
+  {
+    "id": "Q71",
+    "label": "China",
+    "A great deal (%)": "47.6",
+    "Quite a lot (%)": "47",
+    "Not very much (%)": "4.4",
+    "None at all (%)": "0.7"
+  },
+  {
+    "id": "Q71",
+    "label": "United States",
+    "A great deal (%)": "8.3",
+    "Quite a lot (%)": "25.1",
+    "Not very much (%)": "36.7",
+    "None at all (%)": "29"
+  },
+  {
+    "id": "Q72",
+    "label": "China",
+    "A great deal (%)": "36.5",
+    "Quite a lot (%)": "54",
+    "Not very much (%)": "8",
+    "None at all (%)": "0.9"
+  },
+  {
+    "id": "Q72",
+    "label": "United States",
+    "A great deal (%)": "1.7",
+    "Quite a lot (%)": "9.4",
+    "Not very much (%)": "63.8",
+    "None at all (%)": "24"
+  },
+  {
+    "id": "Q73",
+    "label": "China",
+    "A great deal (%)": "38.3",
+    "Quite a lot (%)": "53.9",
+    "Not very much (%)": "6.4",
+    "None at all (%)": "0.9"
+  },
+  {
+    "id": "Q73",
+    "label": "United States",
+    "A great deal (%)": "1.8",
+    "Quite a lot (%)": "13",
+    "Not very much (%)": "60.1",
+    "None at all (%)": "23.6"
+  },
+  {
+    "id": "Q74",
+    "label": "China",
+    "A great deal (%)": "25.9",
+    "Quite a lot (%)": "60.6",
+    "Not very much (%)": "11.4",
+    "None at all (%)": "1.6"
+  },
+  {
+    "id": "Q74",
+    "label": "United States",
+    "A great deal (%)": "4.3",
+    "Quite a lot (%)": "36.6",
+    "Not very much (%)": "46.1",
+    "None at all (%)": "10.5"
+  },
+  {
+    "id": "Q75",
+    "label": "China",
+    "A great deal (%)": "27.9",
+    "Quite a lot (%)": "63",
+    "Not very much (%)": "8",
+    "None at all (%)": "0.5"
+  },
+  {
+    "id": "Q75",
+    "label": "United States",
+    "A great deal (%)": "8.7",
+    "Quite a lot (%)": "45.2",
+    "Not very much (%)": "35.8",
+    "None at all (%)": "9"
+  },
+  {
+    "id": "Q76",
+    "label": "China",
+    "A great deal (%)": "11.7",
+    "Quite a lot (%)": "47.4",
+    "Not very much (%)": "33.6",
+    "None at all (%)": "6.6"
+  },
+  {
+    "id": "Q76",
+    "label": "United States",
+    "A great deal (%)": "5.8",
+    "Quite a lot (%)": "32.9",
+    "Not very much (%)": "45.9",
+    "None at all (%)": "13.8"
+  },
+  {
+    "id": "Q77",
+    "label": "China",
+    "A great deal (%)": "8.1",
+    "Quite a lot (%)": "62.8",
+    "Not very much (%)": "25.9",
+    "None at all (%)": "2.2"
+  },
+  {
+    "id": "Q77",
+    "label": "United States",
+    "A great deal (%)": "2.3",
+    "Quite a lot (%)": "28.9",
+    "Not very much (%)": "53.7",
+    "None at all (%)": "13.8"
+  },
+  {
+    "id": "Q78",
+    "label": "China",
+    "A great deal (%)": "25.8",
+    "Quite a lot (%)": "64.5",
+    "Not very much (%)": "8.8",
+    "None at all (%)": "0.6"
+  },
+  {
+    "id": "Q78",
+    "label": "United States",
+    "A great deal (%)": "4.9",
+    "Quite a lot (%)": "39.2",
+    "Not very much (%)": "42.6",
+    "None at all (%)": "12.1"
+  },
+  {
+    "id": "Q79",
+    "label": "China",
+    "A great deal (%)": "14.8",
+    "Quite a lot (%)": "65.6",
+    "Not very much (%)": "16.3",
+    "None at all (%)": "2.7"
+  },
+  {
+    "id": "Q79",
+    "label": "United States",
+    "A great deal (%)": "10.8",
+    "Quite a lot (%)": "43.1",
+    "Not very much (%)": "34.7",
+    "None at all (%)": "9.9"
+  },
+  {
+    "id": "Q80",
+    "label": "China",
+    "A great deal (%)": "14.7",
+    "Quite a lot (%)": "69.2",
+    "Not very much (%)": "13.6",
+    "None at all (%)": "1.8"
+  },
+  {
+    "id": "Q80",
+    "label": "United States",
+    "A great deal (%)": "10",
+    "Quite a lot (%)": "44",
+    "Not very much (%)": "36.7",
+    "None at all (%)": "7.6"
+  },
+  {
+    "id": "Q81",
+    "label": "China",
+    "A great deal (%)": "14.2",
+    "Quite a lot (%)": "59.1",
+    "Not very much (%)": "22.3",
+    "None at all (%)": "3.7"
+  },
+  {
+    "id": "Q81",
+    "label": "United States",
+    "A great deal (%)": "11.8",
+    "Quite a lot (%)": "50",
+    "Not very much (%)": "32.1",
+    "None at all (%)": "5"
+  }
+]

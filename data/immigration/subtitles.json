@@ -1,0 +1,30 @@
+{
+    "data/immigration/Q1.json": {
+        "title": "Immigration fills useful jobs in the workforce",
+        "subtitle": "Americans and Chinese are both likely to agree that"
+    },
+    "data/immigration/Q2.json": {
+        "title": "Immigration strengthens diversity",
+        "subtitle": "Chinese are more likely to agree that"
+    },
+    "data/immigration/Q3.json": {
+        "title": "Immigration increases the crime rate",
+        "subtitle": "Chinese are more likely to disagree that"
+    },
+    "data/immigration/Q4.json": {
+        "title": "Immigration increases the risk of terrorism",
+        "subtitle": "Americans are more likely to agree that"
+    },
+    "data/immigration/Q5.json": {
+        "title": "Immigration helps poor people establish new lives",
+        "subtitle": "Chinese are more likely to agree that"
+    },
+    "data/immigration/Q6.json": {
+        "title": "Immigration increases unemployment",
+        "subtitle": "Chinese are more likely to disagree that"
+    },
+    "data/immigration/Q7.json": {
+        "title": "Immigration leads to social conflict",
+        "subtitle": "Chinese are more likely to disagree that"
+    }
+}
