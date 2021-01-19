@@ -200,8 +200,8 @@ drawchart("#elections","data/organizations/Q76.json")
 drawchart("#major-companies","data/organizations/Q77.json")
 drawchart("#banks","data/organizations/Q78.json")
 drawchart("#environmental-organizations","data/organizations/Q79.json")
-drawchart("#women-organizations","data/organizations/Q77.json")
-drawchart("#charities","data/organizations/Q78.json")
+drawchart("#women-organizations","data/organizations/Q80.json")
+drawchart("#charities","data/organizations/Q81.json")
 
 //initiat chart
 update("#armed-forces")
